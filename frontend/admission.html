@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions – Alphabet'z School Kolhapur | Apply for 2026-27</title>
+  <meta name="description" content="Learn about the admission process at Alphabet'z School, Kolhapur. Explore eligibility criteria, required documents, fee structure, and important dates for Play Group to 4th Standard admissions." />
+  <meta name="keywords" content="Alphabet'z School admissions, Kolhapur school admission, primary school admission process, school enrollment Kolhapur, admission 2026-27" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
+
+  <style>
+    /* ===== Admission Page Specific Styles ===== */
+
+    /* Page Hero */
+    .admission-hero {
+      position: relative;
+      padding: 10rem 0 5rem;
+      background: linear-gradient(135deg, hsl(35, 40%, 95%) 0%, hsl(35, 30%, 97%) 100%);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .admission-hero::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -15%;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, hsla(25, 90%, 52%, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      animation: float-slow 20s ease-in-out infinite;
+    }
+
+    .admission-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, hsla(200, 80%, 50%, 0.06) 0%, transparent 70%);
+      border-radius: 50%;
+      animation: float-slow 15s ease-in-out infinite reverse;
+    }
+
+    .admission-hero .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .admission-hero .hero-badge {
+      margin: 0 auto var(--space-md);
+    }
+
+    .admission-hero-title {
+      color: black;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: var(--space-md);
+      animation: slideUp 0.8s 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    .admission-hero-desc {
+      font-size: 1.15rem;
+      color: var(--clr-text-muted);
+      max-width: 640px;
+      margin: 0 auto var(--space-lg);
+      line-height: 1.8;
+      animation: slideUp 0.8s 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    .admission-hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      flex-wrap: wrap;
+      animation: slideUp 0.8s 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    /* Back Link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--clr-primary);
+      margin-bottom: var(--space-md);
+      transition: all var(--transition-fast);
+      animation: slideDown 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    .back-link:hover {
+      gap: 0.75rem;
+      color: var(--clr-primary-dark);
+    }
+
+    /* ===== Eligibility Section ===== */
+    .eligibility {
+      padding: var(--space-2xl) 0;
+    }
+
+    .eligibility-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+    }
+
+    .eligibility-header .section-desc {
+      margin: 0 auto;
+    }
+
+    .eligibility-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--space-md);
+    }
+
+    .eligibility-card {
+      background: var(--clr-surface);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--clr-border);
+      transition: all var(--transition-spring);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .eligibility-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+      transition: height var(--transition-smooth);
+    }
+
+    .eligibility-card:nth-child(1)::before { background: var(--grad-warm); }
+    .eligibility-card:nth-child(2)::before { background: var(--grad-sky); }
+    .eligibility-card:nth-child(3)::before { background: var(--grad-green); }
+    .eligibility-card:nth-child(4)::before { background: linear-gradient(135deg, hsl(280, 65%, 55%), hsl(300, 60%, 60%)); }
+    .eligibility-card:nth-child(5)::before { background: linear-gradient(135deg, hsl(45, 100%, 55%), hsl(35, 95%, 50%)); }
+
+    .eligibility-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: transparent;
+    }
+
+    .eligibility-card:hover::before {
+      height: 6px;
+    }
+
+    .eligibility-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto var(--space-sm);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      transition: transform var(--transition-spring);
+    }
+
+    .eligibility-card:hover .eligibility-icon {
+      transform: scale(1.1) rotate(-5deg);
+    }
+
+    .eligibility-card:nth-child(1) .eligibility-icon { background: hsla(25, 90%, 52%, 0.12); }
+    .eligibility-card:nth-child(2) .eligibility-icon { background: hsla(200, 80%, 50%, 0.12); }
+    .eligibility-card:nth-child(3) .eligibility-icon { background: hsla(145, 65%, 42%, 0.12); }
+    .eligibility-card:nth-child(4) .eligibility-icon { background: hsla(280, 65%, 55%, 0.12); }
+    .eligibility-card:nth-child(5) .eligibility-icon { background: hsla(45, 100%, 55%, 0.12); }
+
+    .eligibility-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .eligibility-card p {
+      font-size: 0.9rem;
+      color: var(--clr-text-muted);
+      line-height: 1.6;
+    }
+
+    .eligibility-age {
+      display: inline-block;
+      margin-top: var(--space-sm);
+      padding: 0.3rem 1rem;
+      background: hsla(25, 90%, 52%, 0.08);
+      color: var(--clr-primary);
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* ===== Admission Process Steps ===== */
+    .process {
+      padding: var(--space-2xl) 0;
+      background: linear-gradient(180deg, var(--clr-bg) 0%, hsl(35, 35%, 94%) 100%);
+    }
+
+    .process-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+    }
+
+    .process-header .section-desc {
+      margin: 0 auto;
+    }
+
+    .process-timeline {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .process-timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 39px;
+      width: 3px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--clr-primary), var(--clr-secondary), var(--clr-accent));
+      border-radius: var(--radius-full);
+    }
+
+    .process-step {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+      padding: var(--space-md) 0;
+      position: relative;
+    }
+
+    .step-number {
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: white;
+      position: relative;
+      z-index: 2;
+      box-shadow: var(--shadow-md);
+      transition: transform var(--transition-spring);
+    }
+
+    .process-step:hover .step-number {
+      transform: scale(1.1);
+    }
+
+    .process-step:nth-child(1) .step-number { background: var(--grad-warm); }
+    .process-step:nth-child(2) .step-number { background: var(--grad-sky); }
+    .process-step:nth-child(3) .step-number { background: var(--grad-green); }
+    .process-step:nth-child(4) .step-number { background: linear-gradient(135deg, hsl(280, 65%, 55%), hsl(300, 60%, 60%)); }
+    .process-step:nth-child(5) .step-number { background: linear-gradient(135deg, hsl(45, 100%, 55%), hsl(35, 95%, 50%)); }
+    .process-step:nth-child(6) .step-number { background: var(--grad-hero); }
+
+    .step-content {
+      background: var(--clr-surface);
+      border-radius: var(--radius-lg);
+      padding: var(--space-md) var(--space-lg);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--clr-border);
+      flex: 1;
+      transition: all var(--transition-spring);
+    }
+
+    .process-step:hover .step-content {
+      box-shadow: var(--shadow-md);
+      transform: translateX(6px);
+      border-color: transparent;
+    }
+
+    .step-content h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .step-content p {
+      font-size: 0.92rem;
+      color: var(--clr-text-muted);
+      line-height: 1.7;
+    }
+
+    /* ===== Documents Section ===== */
+    .documents {
+      padding: var(--space-2xl) 0;
+      position: relative;
+    }
+
+    .documents .container {
+      display: block;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .documents-content {
+      padding: var(--space-md) 0;
+    }
+
+    .doc-list {
+      margin-top: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .doc-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: var(--space-sm) var(--space-md);
+      background: var(--clr-surface);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-spring);
+    }
+
+    .doc-item:hover {
+      transform: translateX(8px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--clr-primary);
+    }
+
+    .doc-item-icon {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      background: hsla(25, 90%, 52%, 0.1);
+    }
+
+    .doc-item span {
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    /* Fee Structure */
+    .fee-structure {
+      padding: var(--space-md) 0;
+    }
+
+    .fee-table-wrapper {
+      margin-top: var(--space-lg);
+      background: var(--clr-surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+
+    .fee-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .fee-table thead {
+      background: var(--grad-hero);
+    }
+
+    .fee-table th {
+      padding: 1rem 1.25rem;
+      text-align: left;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: white;
+      letter-spacing: 0.5px;
+    }
+
+    .fee-table td {
+      padding: 0.9rem 1.25rem;
+      font-size: 0.92rem;
+      color: var(--clr-text);
+      border-bottom: 1px solid var(--clr-border);
+    }
+
+    .fee-table tbody tr {
+      transition: background var(--transition-fast);
+    }
+
+    .fee-table tbody tr:hover {
+      background: hsla(25, 90%, 52%, 0.04);
+    }
+
+    .fee-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .fee-table .fee-amount {
+      font-weight: 700;
+      color: var(--clr-primary);
+      font-family: var(--font-heading);
+    }
+
+    .fee-note {
+      padding: var(--space-sm) var(--space-md);
+      font-size: 0.82rem;
+      color: var(--clr-text-muted);
+      background: hsla(45, 100%, 55%, 0.08);
+      border-top: 1px solid var(--clr-border);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* ===== Important Dates ===== */
+    .dates {
+      padding: var(--space-2xl) 0;
+      background: linear-gradient(135deg, hsl(220, 25%, 14%) 0%, hsl(220, 20%, 20%) 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dates::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, hsla(25, 90%, 52%, 0.1), transparent 60%);
+      border-radius: 50%;
+    }
+
+    .dates-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+    }
+
+    .dates-header .section-label {
+      color: var(--clr-highlight);
+    }
+
+    .dates-header .section-label::before {
+      background: var(--clr-highlight);
+    }
+
+    .dates-header .section-title {
+      color: white;
+    }
+
+    .dates-header .section-desc {
+      color: hsla(0, 0%, 100%, 0.65);
+      margin: 0 auto;
+    }
+
+    .dates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--space-md);
+      position: relative;
+      z-index: 1;
+    }
+
+    .date-card {
+      background: hsla(0, 0%, 100%, 0.06);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid hsla(0, 0%, 100%, 0.1);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      text-align: center;
+      transition: all var(--transition-spring);
+    }
+
+    .date-card:hover {
+      background: hsla(0, 0%, 100%, 0.1);
+      transform: translateY(-6px);
+      border-color: hsla(25, 90%, 52%, 0.3);
+    }
+
+    .date-card-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: var(--radius-md);
+      margin: 0 auto var(--space-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      transition: transform var(--transition-spring);
+    }
+
+    .date-card:hover .date-card-icon {
+      transform: scale(1.1) rotate(-5deg);
+    }
+
+    .date-card:nth-child(1) .date-card-icon { background: hsla(25, 90%, 52%, 0.2); }
+    .date-card:nth-child(2) .date-card-icon { background: hsla(200, 80%, 50%, 0.2); }
+    .date-card:nth-child(3) .date-card-icon { background: hsla(145, 65%, 42%, 0.2); }
+    .date-card:nth-child(4) .date-card-icon { background: hsla(45, 100%, 55%, 0.2); }
+
+    .date-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .date-card .date-value {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.35rem 1.2rem;
+      background: hsla(0, 0%, 100%, 0.12);
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--clr-highlight);
+      letter-spacing: 0.5px;
+    }
+
+    .date-card p {
+      font-size: 0.88rem;
+      color: hsla(0, 0%, 100%, 0.65);
+      line-height: 1.6;
+      margin-top: 0.5rem;
+    }
+
+    /* ===== FAQs Section ===== */
+    .faqs {
+      padding: var(--space-2xl) 0;
+      background: linear-gradient(180deg, hsl(35, 35%, 94%) 0%, var(--clr-bg) 100%);
+    }
+
+    .faqs-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+    }
+
+    .faqs-header .section-desc {
+      margin: 0 auto;
+    }
+
+    .faqs-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .faq-item {
+      background: var(--clr-surface);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      transition: all var(--transition-smooth);
+    }
+
+    .faq-item:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .faq-item.active {
+      border-color: var(--clr-primary);
+      box-shadow: 0 0 0 3px hsla(25, 90%, 52%, 0.1), var(--shadow-md);
+    }
+
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-sm);
+      padding: var(--space-md) var(--space-lg);
+      cursor: pointer;
+      user-select: none;
+      transition: background var(--transition-fast);
+    }
+
+    .faq-question:hover {
+      background: hsla(25, 90%, 52%, 0.03);
+    }
+
+    .faq-question h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.4;
+      flex: 1;
+    }
+
+    .faq-toggle {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      border-radius: 50%;
+      background: hsla(25, 90%, 52%, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: var(--clr-primary);
+      transition: all var(--transition-spring);
+    }
+
+    .faq-item.active .faq-toggle {
+      background: var(--grad-hero);
+      color: white;
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .faq-answer-inner {
+      padding: 0 var(--space-lg) var(--space-md);
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-answer p {
+      font-size: 0.92rem;
+      color: var(--clr-text-muted);
+      line-height: 1.7;
+    }
+
+    /* ===== Responsive for Admission Page ===== */
+    @media (max-width: 768px) {
+      .documents .container {
+        grid-template-columns: 1fr;
+      }
+
+      .process-timeline::before {
+        left: 23px;
+      }
+
+      .step-number {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        font-size: 1rem;
+      }
+
+      .step-content {
+        padding: var(--space-sm) var(--space-md);
+      }
+
+      .dates-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .fee-table th,
+      .fee-table td {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.82rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .admission-hero {
+        padding: 8rem 0 3rem;
+      }
+
+      .admission-hero-title {
+        font-size: 1.8rem;
+      }
+
+      .eligibility-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .process-timeline::before {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="Logo" class="nav-logo-img" />
+        <span class="nav-logo-text">Alphabet'z School</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="whyus.html">Why Us</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="enquiry.html">Contact</a></li>
+        <li><a href="#admission-hero" class="nav-cta">Admissions Open</a></li>
+      </ul>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ===== ADMISSION HERO ===== -->
+  <section class="admission-hero bg-yellow" style="position:relative; overflow:hidden; padding-bottom: 80px;" id="admission-hero">
+  <div class="floating-shape shape-circle" style="top: 15%; left: 5%;"></div>
+  <div class="floating-shape shape-triangle" style="top: 60%; right: 5%;"></div>
+    <div class="container">
+      <a href="index.html" class="back-link" id="backToHome">← Back to Home</a>
+
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Admissions Open 2026-27
+      </div>
+
+      <h1 class="admission-hero-title" style="color: black;">
+        Your Child's <span class="highlight" style="color: black;">Journey</span> Begins Here
+      </h1>
+
+      <p class="admission-hero-desc">
+        We welcome every curious young mind with open arms. Discover our simple, transparent admission process and take the first step towards your child's bright future at Alphabet'z School, Kolhapur.
+      </p>
+
+      <div class="admission-hero-actions">
+        <a href="enquiry.html" class="btn btn-primary" id="heroApplyBtn">
+          📝 Enquire Now
+        </a>
+        <a href="#process" class="btn btn-secondary" id="heroProcessBtn">
+          📋 View Process
+        </a>
+      </div>
+      <div style="margin-top: 4rem; text-align: center;"><img src="images/admission-hero.png" alt="Happy school children" style="border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); max-width: 100%; height: auto; max-height: 500px; object-fit: cover; width: 100%; border: 4px solid white;" /></div>
+    </div>
+    <div class="scallop-divider scallop-white"></div>
+  </section>
+
+  <!-- ===== ELIGIBILITY SECTION ===== -->
+  <section class="eligibility" id="eligibility">
+    <div class="container">
+      <div class="eligibility-header reveal">
+        <span class="section-label">Eligibility Criteria</span>
+        <h2 class="section-title">Who Can Apply?</h2>
+        <p class="section-desc">
+          We offer admissions from Play Group to 4th Standard. Below are the age requirements for each class.
+        </p>
+      </div>
+
+      <div class="eligibility-grid">
+        <div class="eligibility-card reveal" style="transition-delay: 0.1s;">
+          <div class="eligibility-icon">🎪</div>
+          <h3>Play Group</h3>
+          <p>Entry into the world of play-based learning. Your child's first joyful introduction to school life.</p>
+          <span class="eligibility-age">Age: 2.5 – 4 years</span>
+        </div>
+
+        <div class="eligibility-card reveal" style="transition-delay: 0.15s;">
+          <div class="eligibility-icon">🧸</div>
+          <h3>Nursery</h3>
+          <p>A nurturing environment focused on early socialization and basic conceptual learning.</p>
+          <span class="eligibility-age">3yrs+</span>
+        </div>
+
+        <div class="eligibility-card reveal" style="transition-delay: 0.2s;">
+          <div class="eligibility-icon">🖍ï¸</div>
+          <h3>Jr KG</h3>
+          <p>Introduction to structured learning, focusing on vocabulary and motor skills.</p>
+          <span class="eligibility-age">4yrs+</span>
+        </div>
+
+        <div class="eligibility-card reveal" style="transition-delay: 0.25s;">
+          <div class="eligibility-icon">🧩</div>
+          <h3>Sr KG</h3>
+          <p>Building early reading, writing skills, and numerical concepts for primary school readiness.</p>
+          <span class="eligibility-age">5yrs+</span>
+        </div>
+        <div class="eligibility-card reveal" style="transition-delay: 0.2s;">
+          <div class="eligibility-icon">🌸</div>
+          <h3>1st Standard</h3>
+          <p>Foundation year with structured learning in phonics, basic numeracy, and social skills development.</p>
+          <span class="eligibility-age">Age: 5 – 6 years</span>
+        </div>
+
+        <div class="eligibility-card reveal" style="transition-delay: 0.3s;">
+          <div class="eligibility-icon">🚀</div>
+          <h3>2nd Standard</h3>
+          <p>Building reading fluency, creative expression, and early mathematical thinking skills.</p>
+          <span class="eligibility-age">Age: 6 – 7 years</span>
+        </div>
+
+        <div class="eligibility-card reveal" style="transition-delay: 0.4s;">
+          <div class="eligibility-icon">🔬</div>
+          <h3>3rd Standard</h3>
+          <p>Deeper subject knowledge, project-based learning, and collaborative group activities.</p>
+          <span class="eligibility-age">Age: 7 – 8 years</span>
+        </div>
+
+        <div class="eligibility-card reveal" style="transition-delay: 0.5s;">
+          <div class="eligibility-icon">🏆</div>
+          <h3>4th Standard</h3>
+          <p>Advanced academics with leadership opportunities and readiness for higher education.</p>
+          <span class="eligibility-age">Age: 8 – 9 years</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ADMISSION PROCESS ===== -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="process-header reveal">
+        <span class="section-label">Admission Process</span>
+        <h2 class="section-title">Simple Steps to Enroll</h2>
+        <p class="section-desc">
+          Our admission process is designed to be straightforward and stress-free. Follow these easy steps to secure your child's spot.
+        </p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="process-step reveal" style="transition-delay: 0.1s;">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>📩 Submit an Enquiry</h3>
+            <p>Fill out the online enquiry form on our website or visit the school office. Our team will get back to you within 24 hours with all the details you need.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal" style="transition-delay: 0.2s;">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>🏫 Visit the Campus</h3>
+            <p>Schedule a campus tour to experience our vibrant learning environment first-hand. Meet our teachers, explore the classrooms, and see our facilities in action.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal" style="transition-delay: 0.3s;">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>📄 Collect the Application Form</h3>
+            <p>Obtain the official admission form from the school office or download it from our website. The form can also be picked up during your campus visit.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal" style="transition-delay: 0.4s;">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>📋 Submit Documents</h3>
+            <p>Submit the completed application form along with the required documents (listed below). Ensure all photocopies are attested and originals are brought for verification.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal" style="transition-delay: 0.5s;">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>🤝 Interaction Round</h3>
+            <p>A friendly, informal interaction with the child and parents. This is not a test — it's a conversation to understand your child's interests, learning style, and comfort level.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal" style="transition-delay: 0.6s;">
+          <div class="step-number">6</div>
+          <div class="step-content">
+            <h3>✅ Confirmation & Fee Payment</h3>
+            <p>Once selected, you'll receive a confirmation letter. Complete the fee payment to finalize enrollment. Welcome to the Alphabet'z School family!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOCUMENTS ===== -->
+  <section class="documents" id="documents">
+    <div class="container">
+      <!-- Required Documents -->
+      <div class="documents-content reveal-left">
+        <span class="section-label">Required Documents</span>
+        <h2 class="section-title">What to Bring</h2>
+        <p class="section-desc">
+          Please keep the following documents ready when you visit for admission. Originals are required for verification.
+        </p>
+
+        <div class="doc-list">
+          <div class="doc-item">
+            <div class="doc-item-icon">📄</div>
+            <span>Completed Admission Application Form</span>
+          </div>
+          <div class="doc-item">
+            <div class="doc-item-icon">🎂</div>
+            <span>Birth Certificate (Original + Photocopy)</span>
+          </div>
+          <div class="doc-item">
+            <div class="doc-item-icon">📸</div>
+            <span>4 Passport-size Photos of the Child</span>
+          </div>
+          <div class="doc-item">
+            <div class="doc-item-icon">🆔</div>
+            <span>Aadhaar Card of Child & Parents (Photocopy)</span>
+          </div>
+          <div class="doc-item">
+            <div class="doc-item-icon">📋</div>
+            <span>Previous School Transfer Certificate (if applicable)</span>
+          </div>
+          <div class="doc-item">
+            <div class="doc-item-icon">📊</div>
+            <span>Last Year's Report Card (for 2nd Std onwards)</span>
+          </div>
+          <div class="doc-item">
+            <div class="doc-item-icon">🏠</div>
+            <span>Address Proof (Ration Card / Utility Bill)</span>
+          </div>
+          <div class="doc-item">
+            <div class="doc-item-icon">🏥</div>
+            <span>Medical Fitness Certificate from a Doctor</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== IMPORTANT DATES ===== -->
+  <section class="dates" id="dates">
+    <div class="container">
+      <div class="dates-header reveal">
+        <span class="section-label">Important Dates</span>
+        <h2 class="section-title">Mark Your Calendar</h2>
+        <p class="section-desc">
+          Don't miss these key dates for the 2026-27 admission cycle. Plan ahead and secure your child's spot at Alphabet'z School.
+        </p>
+      </div>
+
+      <div class="dates-grid">
+        <div class="date-card reveal" style="transition-delay: 0.1s;">
+          <div class="date-card-icon">📢</div>
+          <h3>Admission Notification</h3>
+          <span class="date-value">1st January 2026</span>
+          <p>Official announcement and start of the enquiry period.</p>
+        </div>
+
+        <div class="date-card reveal" style="transition-delay: 0.2s;">
+          <div class="date-card-icon">📝</div>
+          <h3>Form Availability</h3>
+          <span class="date-value">15th January 2026</span>
+          <p>Application forms available at school office and online.</p>
+        </div>
+
+        <div class="date-card reveal" style="transition-delay: 0.3s;">
+          <div class="date-card-icon">📅</div>
+          <h3>Last Date to Apply</h3>
+          <span class="date-value">28th February 2026</span>
+          <p>Deadline for submission of completed applications.</p>
+        </div>
+
+        <div class="date-card reveal" style="transition-delay: 0.4s;">
+          <div class="date-card-icon">🎉</div>
+          <h3>New Session Begins</h3>
+          <span class="date-value">15th June 2026</span>
+          <p>Orientation day and commencement of the academic year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQs ===== -->
+  <section class="faqs" id="faqs">
+    <div class="container">
+      <div class="faqs-header reveal">
+        <span class="section-label">Frequently Asked Questions</span>
+        <h2 class="section-title">Got Questions? We've Got Answers</h2>
+        <p class="section-desc">
+          Here are the most commonly asked questions about our admission process. If you need more help, don't hesitate to contact us.
+        </p>
+      </div>
+
+      <div class="faqs-list">
+        <div class="faq-item active reveal" style="transition-delay: 0.1s;" id="faq1">
+          <div class="faq-question" onclick="toggleFAQ('faq1')">
+            <h3>What is the minimum age for Play Group admission?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Children must be at least 2.5 years old as of June 1st of the admission year. Age verification is done through the birth certificate submitted during the application process.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" style="transition-delay: 0.15s;" id="faq2">
+          <div class="faq-question" onclick="toggleFAQ('faq2')">
+            <h3>Is there an entrance exam for admission?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>No, there is no formal entrance exam. We conduct a friendly, informal interaction with the child and parents. The aim is to understand the child's interests and comfort level — not to test them.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" style="transition-delay: 0.2s;" id="faq3">
+          <div class="faq-question" onclick="toggleFAQ('faq3')">
+            <h3>Can I pay the fees in installments?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Yes! The annual tuition fee can be paid in 2 convenient installments — one at the beginning of each term. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" style="transition-delay: 0.25s;" id="faq4">
+          <div class="faq-question" onclick="toggleFAQ('faq4')">
+            <h3>Does the school provide transport facilities?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Yes, we offer GPS-tracked school bus services covering all major areas of Kolhapur. Every bus has a trained attendant to ensure your child's safety. Transport fees are separate from tuition fees and vary based on distance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" style="transition-delay: 0.3s;" id="faq5">
+          <div class="faq-question" onclick="toggleFAQ('faq5')">
+            <h3>What is the student-to-teacher ratio?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>We maintain a low student-to-teacher ratio of approximately 20:1 to ensure every child receives personalized attention. For Play Group classes, the ratio is even lower at 15:1.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" style="transition-delay: 0.35s;" id="faq6">
+          <div class="faq-question" onclick="toggleFAQ('faq6')">
+            <h3>Is mid-session admission possible?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Mid-session admissions are considered on a case-by-case basis, subject to seat availability. A transfer certificate from the previous school and the latest report card are mandatory for mid-session entries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ADMISSION CTA ===== -->
+  <section class="cta" id="admission-cta">
+    <div class="container">
+      <div class="cta-box reveal">
+        <div class="cta-content">
+          <h2>🎓 Ready to Begin the Journey?</h2>
+          <p>
+            Seats are filling fast for the 2026-27 academic year. Don't wait — secure your child's place at Alphabet'z School today and give them the gift of a strong foundation!
+          </p>
+          <a href="enquiry.html" class="btn btn-white" id="ctaEnquireBtn">
+            ✨ Submit an Enquiry
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="images/logo.jpg" alt="Logo" class="nav-logo-img" />
+            <span class="nav-logo-text">Alphabet'z School</span>
+          </a>
+          <p>
+            Nurturing young minds since 2015. Alphabet'z School is committed to providing quality education in a joyful and safe learning environment in Kolhapur.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="YouTube">🎬</a>
+            <a href="https://wa.me/919112124440" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="whyus.html">Why Choose Us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Admissions</h4>
+          <ul>
+            <li><a href="#eligibility">Eligibility</a></li>
+            <li><a href="#process">Admission Process</a></li>
+            <li><a href="#documents">Documents Required</a></li>
+            <li><a href="#dates">Important Dates</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><a href="#">📍 1794, A, Brahmeshwar bag, shivaji peth, kolhapur.</a></li>
+            <li><a href="tel:02312621010">📞 0231-2621010</a></li>
+            <li><a href="mailto:admissions@alphaschoolkolhapur.com">✉️ admissions@alphaschoolkolhapur.com</a></li>
+            <li><a href="#">🕐 Mon-Sat: 8 AM – 2 PM</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Alphabet'z School, Kolhapur. All rights reserved.</p>
+        <p>Designed with ❤️ for young learners | Powered by <strong>weblinkers™</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // ---- Navbar scroll effect ----
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // ---- Mobile menu toggle ----
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navOverlay = document.getElementById('navOverlay');
+
+    function toggleMenu() {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      navOverlay.classList.toggle('active');
+      document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    }
+
+    menuToggle.addEventListener('click', toggleMenu);
+    navOverlay.addEventListener('click', toggleMenu);
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+          toggleMenu();
+        }
+      });
+    });
+
+    // ---- Scroll reveal (IntersectionObserver) ----
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+        rootMargin: '0px 0px -60px 0px',
+      }
+    );
+
+    revealElements.forEach((el) => revealObserver.observe(el));
+
+    // ---- Scroll to top button ----
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ---- FAQ Toggle ----
+    function toggleFAQ(id) {
+      const item = document.getElementById(id);
+      const isActive = item.classList.contains('active');
+
+      // Close all FAQs
+      document.querySelectorAll('.faq-item').forEach((faq) => {
+        faq.classList.remove('active');
+      });
+
+      // Open clicked one (if it wasn't already open)
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+
+    // ---- Smooth scroll for anchor links ----
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          const navHeight = navbar.offsetHeight;
+          const targetPos = target.getBoundingClientRect().top + window.scrollY - navHeight - 20;
+          window.scrollTo({ top: targetPos, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+
+  <!-- ===== FLOATING CHATBOT ===== -->
+  
+  <div class="chatbot-wrapper">
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open Chat">💬</button>
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <img src="images/logo.jpg" alt="Bot" class="chatbot-avatar-img" />
+          <div>
+            <h3>Alphabet'z Assistant</h3>
+            <p>Online</p>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbotClose" aria-label="Close Chat">&times;</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chat-msg bot">Hi there! 👋 Welcome to Alphabet'z School. How can I help you today?</div>
+      </div>
+      <div class="chatbot-options">
+        <button class="chatbot-option-btn" data-query="admission">Admissions</button>
+        <button class="chatbot-option-btn" data-query="timing">Timings</button>
+        <button class="chatbot-option-btn" data-query="location">Location</button>
+        <button class="chatbot-option-btn" data-query="program">Programs</button>
+        <button class="chatbot-option-btn" data-query="contact">Contact Info</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Chatbot Logic
+    const chatToggle = document.getElementById('chatbotToggle');
+    const chatWindow = document.getElementById('chatbotWindow');
+    const chatClose = document.getElementById('chatbotClose');
+    const chatMessages = document.getElementById('chatbotMessages');
+    const optionBtns = document.querySelectorAll('.chatbot-option-btn');
+
+    function toggleChat() {
+      chatWindow.classList.toggle('active');
+    }
+
+    chatToggle.addEventListener('click', toggleChat);
+    chatClose.addEventListener('click', toggleChat);
+
+    function addMessage(msg, type) {
+      const msgDiv = document.createElement('div');
+      msgDiv.className = `chat-msg ${type}`;
+      msgDiv.textContent = msg;
+      chatMessages.appendChild(msgDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function showTyping() {
+      const typingDiv = document.createElement('div');
+      typingDiv.className = 'chat-msg bot chat-typing';
+      typingDiv.id = 'chatTyping';
+      typingDiv.innerHTML = '<span></span><span></span><span></span>';
+      chatMessages.appendChild(typingDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function removeTyping() {
+      const typingDiv = document.getElementById('chatTyping');
+      if(typingDiv) typingDiv.remove();
+    }
+    
+    function getBotResponse(input) {
+        const text = input.toLowerCase();
+        if (text.includes("fee") || text.includes("cost")) {
+          return "Please contact the school office for detailed information regarding our fee structure.";
+        } else if (text.includes("admission") || text.includes("enroll") || text.includes("apply")) {
+          return "Admissions for 2026-27 are currently open! You can fill out the enquiry form on our Contact page or visit our campus.";
+        } else if (text.includes("time") || text.includes("timing") || text.includes("hour")) {
+          return "Our school timings are Monday to Saturday, 9:00 AM to 2:30 PM.";
+        } else if (text.includes("location") || text.includes("address") || text.includes("where")) {
+          return "We are located at 1794, A, Brahmeshwar bag, shivaji peth, kolhapur. You can find a map on our Contact page.";
+        } else if (text.includes("program") || text.includes("class") || text.includes("standard")) {
+          return "We offer classes from Play Group up to 4th Standard. You can learn more on our Programs page.";
+        } else if (text.includes("contact") || text.includes("phone") || text.includes("call") || text.includes("email")) {
+          return "You can reach us at 0231-2621010 or email school.alphakop@gmail.com.";
+        } else {
+          return "Thanks for your message. For detailed information, please check our website or contact our administration office at 0231-2621010.";
+        }
+    }
+
+    optionBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const query = btn.getAttribute('data-query');
+        const label = btn.textContent;
+        
+        // Add user message
+        addMessage(label, 'user');
+        
+        // Simulate typing and respond
+        showTyping();
+        setTimeout(() => {
+          removeTyping();
+          addMessage(getBotResponse(query), 'bot');
+        }, 1200);
+      });
+    });
+  </script>
+</body>
+
+</html>
+

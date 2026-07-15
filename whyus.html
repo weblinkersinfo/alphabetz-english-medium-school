@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Choose Us – Alphabet'z School Kolhapur | What Makes Us Special</title>
+  <meta name="description" content="Discover why Alphabet'z School Kolhapur is the best choice for your child. Experienced faculty, smart classrooms, safe transport, holistic development, and more." />
+  <meta name="keywords" content="why Alphabet'z School, best school Kolhapur, school facilities, smart classrooms, safe transport, holistic education" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
+  <style>
+    .page-hero{position:relative;padding:10rem 0 5rem;background:linear-gradient(135deg,hsl(35,40%,95%) 0%,hsl(35,30%,97%) 100%);overflow:hidden;text-align:center}
+    .page-hero::before{content:'';position:absolute;top:-40%;right:-15%;width:700px;height:700px;background:radial-gradient(circle,hsla(145,65%,42%,.08) 0%,transparent 70%);border-radius:50%;animation:float-slow 20s ease-in-out infinite}
+    .page-hero::after{content:'';position:absolute;bottom:-30%;left:-10%;width:500px;height:500px;background:radial-gradient(circle,hsla(25,90%,52%,.06) 0%,transparent 70%);border-radius:50%;animation:float-slow 15s ease-in-out infinite reverse}
+    .page-hero .container{position:relative;z-index:1}
+    .page-hero-title{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;line-height:1.15;margin-bottom:var(--space-md);animation:slideUp .8s .2s cubic-bezier(.34,1.56,.64,1) both}
+    .page-hero-desc{font-size:1.15rem;color:var(--clr-text-muted);max-width:640px;margin:0 auto var(--space-lg);line-height:1.8;animation:slideUp .8s .4s cubic-bezier(.34,1.56,.64,1) both}
+    .back-link{display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;font-weight:600;color:var(--clr-primary);margin-bottom:var(--space-md);transition:all var(--transition-fast);animation:slideDown .8s cubic-bezier(.34,1.56,.64,1) both}
+    .back-link:hover{gap:.75rem;color:var(--clr-primary-dark)}
+
+    /* Stats Banner */
+    .stats-banner{padding:var(--space-xl) 0;background:var(--grad-hero);position:relative;overflow:hidden}
+    .stats-banner::before{content:'';position:absolute;top:-50%;right:-20%;width:500px;height:500px;background:radial-gradient(circle,hsla(0,0%,100%,.1),transparent 60%);border-radius:50%}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-md);position:relative;z-index:1;text-align:center;color:white}
+    .stat-block .stat-num{font-family:var(--font-heading);font-size:2.5rem;font-weight:800;margin-bottom:.2rem}
+    .stat-block .stat-lbl{font-size:.9rem;opacity:.85}
+
+    /* Detailed Features */
+    .features-detail{padding:var(--space-2xl) 0}
+    .features-detail-header{text-align:center;margin-bottom:var(--space-xl)}.features-detail-header .section-desc{margin:0 auto}
+    .feature-detail-item{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:center;padding:var(--space-xl) 0;border-bottom:1px solid var(--clr-border)}
+    .feature-detail-item:last-child{border-bottom:none}
+    .feature-detail-item:nth-child(even){direction:rtl}.feature-detail-item:nth-child(even)>*{direction:ltr}
+    .fd-visual{text-align:center}
+    .fd-card{display:inline-flex;flex-direction:column;align-items:center;background:var(--clr-surface);border-radius:var(--radius-xl);padding:var(--space-xl);box-shadow:var(--shadow-lg);border:1px solid var(--clr-border);transition:all var(--transition-spring)}
+    .fd-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl)}
+    .fd-emoji{font-size:4rem;margin-bottom:var(--space-sm)}
+    .fd-card h3{font-size:1.5rem}
+    .fd-info .section-desc{margin-bottom:var(--space-md)}
+    .fd-benefits{display:flex;flex-direction:column;gap:.5rem}
+    .fd-benefit{display:flex;align-items:center;gap:.6rem;padding:.5rem .8rem;background:var(--clr-surface);border-radius:var(--radius-sm);border:1px solid var(--clr-border);font-size:.9rem;font-weight:500;transition:all var(--transition-fast)}
+    .fd-benefit:hover{border-color:var(--clr-primary);transform:translateX(4px)}
+    .fd-benefit .fb-icon{font-size:1.1rem}
+
+    /* Approach Section */
+    .approach-section{padding:var(--space-2xl) 0;background:linear-gradient(180deg,var(--clr-bg) 0%,hsl(35,35%,94%) 100%)}
+    .approach-header{text-align:center;margin-bottom:var(--space-xl)}.approach-header .section-desc{margin:0 auto}
+    .approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-md)}
+    .approach-card{background:var(--clr-surface);border-radius:var(--radius-lg);padding:var(--space-lg);text-align:center;box-shadow:var(--shadow-sm);border:1px solid var(--clr-border);transition:all var(--transition-spring);position:relative;overflow:hidden}
+    .approach-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;border-radius:var(--radius-lg) var(--radius-lg) 0 0;transition:height var(--transition-smooth)}
+    .approach-card:nth-child(1)::before{background:var(--grad-warm)}.approach-card:nth-child(2)::before{background:var(--grad-sky)}.approach-card:nth-child(3)::before{background:var(--grad-green)}
+    .approach-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:transparent}
+    .approach-card:hover::before{height:6px}
+    .approach-icon{width:72px;height:72px;margin:0 auto var(--space-sm);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:2rem;transition:transform var(--transition-spring)}
+    .approach-card:hover .approach-icon{transform:scale(1.1) rotate(-5deg)}
+    .approach-card:nth-child(1) .approach-icon{background:hsla(25,90%,52%,.12)}.approach-card:nth-child(2) .approach-icon{background:hsla(200,80%,50%,.12)}.approach-card:nth-child(3) .approach-icon{background:hsla(145,65%,42%,.12)}
+    .approach-card h3{font-size:1.1rem;margin-bottom:.4rem}.approach-card p{font-size:.88rem;color:var(--clr-text-muted);line-height:1.6}
+
+    /* Achievements */
+    .achievements{padding:var(--space-2xl) 0;background:linear-gradient(135deg,hsl(220,25%,14%) 0%,hsl(220,20%,20%) 100%);color:white;position:relative;overflow:hidden}
+    .achievements::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,hsla(25,90%,52%,.1),transparent 60%);border-radius:50%}
+    .ach-header{text-align:center;margin-bottom:var(--space-xl)}.ach-header .section-label{color:var(--clr-highlight)}.ach-header .section-label::before{background:var(--clr-highlight)}.ach-header .section-title{color:white}.ach-header .section-desc{color:hsla(0,0%,100%,.65);margin:0 auto}
+    .ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:var(--space-md);position:relative;z-index:1}
+    .ach-card{background:hsla(0,0%,100%,.06);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid hsla(0,0%,100%,.1);border-radius:var(--radius-lg);padding:var(--space-lg);text-align:center;transition:all var(--transition-spring)}
+    .ach-card:hover{background:hsla(0,0%,100%,.1);transform:translateY(-6px);border-color:hsla(25,90%,52%,.3)}
+    .ach-icon{width:64px;height:64px;border-radius:var(--radius-md);margin:0 auto var(--space-sm);display:flex;align-items:center;justify-content:center;font-size:1.8rem;transition:transform var(--transition-spring)}
+    .ach-card:hover .ach-icon{transform:scale(1.1) rotate(-5deg)}
+    .ach-card:nth-child(1) .ach-icon{background:hsla(25,90%,52%,.2)}.ach-card:nth-child(2) .ach-icon{background:hsla(200,80%,50%,.2)}.ach-card:nth-child(3) .ach-icon{background:hsla(145,65%,42%,.2)}.ach-card:nth-child(4) .ach-icon{background:hsla(45,100%,55%,.2)}
+    .ach-card h3{font-size:1.05rem;margin-bottom:.3rem}.ach-card p{font-size:.85rem;color:hsla(0,0%,100%,.65);line-height:1.6}
+
+    /* Gallery */
+    .gallery-section{padding:var(--space-2xl) 0;background:linear-gradient(180deg,hsl(35,35%,94%) 0%,var(--clr-bg) 100%)}
+    .gallery-section-header{text-align:center;margin-bottom:var(--space-xl)}.gallery-section-header .section-desc{margin:0 auto}
+    .gallery-wrap{border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-lg);max-width:900px;margin:0 auto;transition:transform var(--transition-spring)}
+    .gallery-wrap:hover{transform:scale(1.01)}
+    .gallery-wrap img{width:100%;height:auto;display:block}
+
+    @media(max-width:1024px){.stats-grid{grid-template-columns:repeat(2,1fr)}.approach-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:768px){.stats-grid{grid-template-columns:1fr}.feature-detail-item{grid-template-columns:1fr}.feature-detail-item:nth-child(even){direction:ltr}.approach-grid{grid-template-columns:1fr}.ach-grid{grid-template-columns:1fr}}
+    @media(max-width:480px){.page-hero{padding:8rem 0 3rem}.page-hero-title{font-size:1.8rem}.stat-block .stat-num{font-size:2rem}}
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar"><div class="container"><a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="Logo" class="nav-logo-img" /><span class="nav-logo-text">Alphabet'z School</span></a><ul class="nav-links" id="navLinks"><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="whyus.html" class="active">Why Us</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="enquiry.html">Contact</a></li><li><a href="admission.html" class="nav-cta">Admissions Open</a></li></ul><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button></div><div class="nav-overlay" id="navOverlay"></div></nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+      <div class="hero-badge"><span class="badge-dot"></span>Trusted Since 2015</div>
+      <h1 class="page-hero-title">Why Families <span class="highlight">Choose</span> Alphabet'z</h1>
+      <p class="page-hero-desc">We go beyond textbooks to create an enriching experience where children love to learn, grow, and thrive every single day. Here's what makes us different.</p>
+      <div style="margin-top: 1rem; margin-bottom: 3rem;">
+        <a href="https://youtu.be/swY7hZOi3kE?si=-kGKWER5Xumy2jf7" target="_blank" class="btn btn-primary" style="display: inline-flex; gap: 8px; align-items: center; background: #FF0000;">
+          <span style="font-size: 1.2rem;">▶</span> Watch Our Video
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BANNER -->
+  <section class="stats-banner">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-block reveal" style="transition-delay:.1s"><div class="stat-num" data-count="2500">0</div><div class="stat-lbl">Happy Students</div></div>
+        <div class="stat-block reveal" style="transition-delay:.2s"><div class="stat-num" data-count="25">0</div><div class="stat-lbl">Expert Teachers</div></div>
+        <div class="stat-block reveal" style="transition-delay:.3s"><div class="stat-num" data-count="11">0</div><div class="stat-lbl">Years of Excellence</div></div>
+        <div class="stat-block reveal" style="transition-delay:.4s"><div class="stat-num" data-count="98">0</div><div class="stat-lbl">% Parent Satisfaction</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED FEATURES -->
+  <section class="features-detail">
+    <div class="container">
+      <div class="features-detail-header reveal">
+        <span class="section-label">Our Strengths</span>
+        <h2 class="section-title">What Makes Alphabet'z School Special</h2>
+        <p class="section-desc">Every aspect of our school is designed with one goal — to give your child the best possible start in life.</p>
+      </div>
+
+      <div class="feature-detail-item">
+        <div class="fd-visual reveal-left"><div class="fd-card"><div class="fd-emoji">👩‍🏫</div><h3>Expert Faculty</h3></div></div>
+        <div class="fd-info reveal-right">
+          <span class="section-label">Our Teachers</span>
+          <h2 class="section-title">Passionate & Experienced Educators</h2>
+          <p class="section-desc">Our team of 25+ teachers are trained in modern pedagogy, child psychology, and innovative teaching methods. Every teacher undergoes continuous professional development.</p>
+          <div class="fd-benefits">
+            <div class="fd-benefit"><span class="fb-icon">🎓</span>B.Ed & M.Ed qualified faculty</div>
+            <div class="fd-benefit"><span class="fb-icon">📚</span>Regular training workshops & seminars</div>
+            <div class="fd-benefit"><span class="fb-icon">❤️</span>Low 20:1 student-teacher ratio</div>
+            <div class="fd-benefit"><span class="fb-icon">🏆</span>Award-winning teaching team</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-detail-item">
+        <div class="fd-visual reveal-left"><div class="fd-card"><div class="fd-emoji">🖥️</div><h3>Smart Classrooms</h3></div></div>
+        <div class="fd-info reveal-right">
+          <span class="section-label">Technology</span>
+          <h2 class="section-title">Learning Powered by Technology</h2>
+          <p class="section-desc">Every classroom is equipped with interactive digital boards, educational software, and multimedia content. We use technology to make complex concepts simple, visual, and fun.</p>
+          <div class="fd-benefits">
+            <div class="fd-benefit"><span class="fb-icon">📺</span>Interactive smart boards in every class</div>
+            <div class="fd-benefit"><span class="fb-icon">💻</span>Dedicated computer lab with internet</div>
+            <div class="fd-benefit"><span class="fb-icon">🎬</span>Video-based learning modules</div>
+            <div class="fd-benefit"><span class="fb-icon">📱</span>Digital progress tracking for parents</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-detail-item">
+        <div class="fd-visual reveal-left"><div class="fd-card"><div class="fd-emoji">🛡️</div><h3>Safety First</h3></div></div>
+        <div class="fd-info reveal-right">
+          <span class="section-label">Security</span>
+          <h2 class="section-title">Complete Safety & Peace of Mind</h2>
+          <p class="section-desc">Your child's safety is our top priority. From CCTV surveillance to GPS-tracked buses, we leave nothing to chance when it comes to protecting our students.</p>
+          <div class="fd-benefits">
+            <div class="fd-benefit"><span class="fb-icon">📹</span>Full campus CCTV monitoring</div>
+            <div class="fd-benefit"><span class="fb-icon">🚌</span>GPS-tracked school buses with attendants</div>
+            <div class="fd-benefit"><span class="fb-icon">🚪</span>Controlled entry & ID-verified pickups</div>
+            <div class="fd-benefit"><span class="fb-icon">🏥</span>First-aid room & trained medical staff</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-detail-item">
+        <div class="fd-visual reveal-left"><div class="fd-card"><div class="fd-emoji">🌱</div><h3>Holistic Growth</h3></div></div>
+        <div class="fd-info reveal-right">
+          <span class="section-label">Development</span>
+          <h2 class="section-title">Mind, Body & Spirit</h2>
+          <p class="section-desc">We focus on the complete development of every child — academics, physical fitness, emotional intelligence, creativity, and social skills. No child is left behind.</p>
+          <div class="fd-benefits">
+            <div class="fd-benefit"><span class="fb-icon">🏃</span>Daily sports & outdoor play time</div>
+            <div class="fd-benefit"><span class="fb-icon">🎨</span>Weekly art, music & dance classes</div>
+            <div class="fd-benefit"><span class="fb-icon">🧠</span>Emotional wellness & counseling</div>
+            <div class="fd-benefit"><span class="fb-icon">🤝</span>Community service & life skills</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-detail-item">
+        <div class="fd-visual reveal-left"><div class="fd-card"><div class="fd-emoji">👨‍👩‍👧‍👦</div><h3>Parent-Teacher Interaction</h3></div></div>
+        <div class="fd-info reveal-right">
+          <span class="section-label">Partnership</span>
+          <h2 class="section-title">Collaborating for Your Child's Success</h2>
+          <p class="section-desc">We believe that a strong partnership between parents and teachers is essential for a child's development. That's why we dedicate time every Saturday for one-on-one interactions to discuss your child's progress, strengths, and areas for growth in detail.</p>
+          <div class="fd-benefits">
+            <div class="fd-benefit"><span class="fb-icon">🗓️</span>Dedicated interactions every Saturday</div>
+            <div class="fd-benefit"><span class="fb-icon">📈</span>Detailed progress & development tracking</div>
+            <div class="fd-benefit"><span class="fb-icon">💬</span>Open, constructive two-way communication</div>
+            <div class="fd-benefit"><span class="fb-icon">🤝</span>Personalized guidance for at-home support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARNING APPROACH -->
+  <section class="approach-section">
+    <div class="container">
+      <div class="approach-header reveal">
+        <span class="section-label">Our Approach</span>
+        <h2 class="section-title">How We Teach</h2>
+        <p class="section-desc">Our teaching methodology is rooted in three core principles that ensure every child learns effectively and joyfully.</p>
+      </div>
+      <div class="approach-grid">
+        <div class="approach-card reveal" style="transition-delay:.1s"><div class="approach-icon">🎯</div><h3>Activity-Based Learning</h3><p>Children learn by doing. We use games, experiments, role-play, and hands-on projects to make abstract concepts tangible and memorable.</p></div>
+        <div class="approach-card reveal" style="transition-delay:.2s"><div class="approach-icon">🧩</div><h3>Personalized Attention</h3><p>Every child learns differently. Our teachers identify individual strengths and tailor guidance to each student's pace, providing extra remedial support for those who require it.</p></div>
+        <div class="approach-card reveal" style="transition-delay:.3s"><div class="approach-icon">🌍</div><h3>Real-World Connection</h3><p>We connect classroom learning to the real world through field trips, nature walks, guest speakers, and community projects that inspire curiosity.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="achievements">
+    <div class="container">
+      <div class="ach-header reveal">
+        <span class="section-label">Our Achievements</span>
+        <h2 class="section-title">Milestones We're Proud Of</h2>
+        <p class="section-desc">Our students, teachers, and school have been recognized at district, state, and national levels.</p>
+      </div>
+      <div class="ach-grid">
+        <div class="ach-card reveal" style="transition-delay:.1s"><div class="ach-icon">🏆</div><h3>Best Primary School Award</h3><p>Recognized as one of the top primary schools in Kolhapur district for 3 consecutive years.</p></div>
+        <div class="ach-card reveal" style="transition-delay:.2s"><div class="ach-icon">🥇</div><h3>Intra-School Championship</h3><p>We proudly present the Intra-School Student of the Year award to recognize outstanding all-round excellence among our students.</p></div>
+        <div class="ach-card reveal" style="transition-delay:.3s"><div class="ach-icon">📊</div><h3>100% Parent Approval</h3><p>In our annual survey, 98% of parents rate Alphabet'z School as "Excellent" and recommend us to others.</p></div>
+        <div class="ach-card reveal" style="transition-delay:.4s"><div class="ach-icon">🌟</div><h3>Innovation in Education</h3><p>Awarded for implementing smart classroom technology and activity-based learning at the primary level.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-section-header reveal">
+        <span class="section-label">Life at Alphabet'z</span>
+        <h2 class="section-title">A Glimpse Into Our World</h2>
+        <p class="section-desc">From sports day excitement to the joy of art class — here's a peek at the vibrant life our students enjoy every day.</p>
+      </div>
+      <div class="gallery-wrap reveal">
+        <img src="images/programs-collage.png" alt="Collage of students participating in sports, music, art, and science activities" width="900" height="900" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta"><div class="container"><div class="cta-box reveal"><div class="cta-content"><h2>🎓 Experience the Alphabet'z Difference</h2><p>Visit our campus and see firsthand why hundreds of families trust us with their children's education.</p><a href="enquiry.html" class="btn btn-white">✨ Schedule a Visit</a></div></div></div></section>
+
+  <!-- FOOTER -->
+  <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="Logo" class="nav-logo-img" /><span class="nav-logo-text">Alphabet'z School</span></a><p>Nurturing young minds since 2015. Alphabet'z School is committed to providing quality education in a joyful and safe learning environment in Kolhapur.</p><div class="footer-social"><a href="#" aria-label="Facebook">📘</a><a href="#" aria-label="Instagram">📸</a><a href="#" aria-label="YouTube">🎬</a><a href="https://wa.me/919112124440" aria-label="WhatsApp">💬</a></div></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="whyus.html">Why Choose Us</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="enquiry.html">Enquiry</a></li></ul></div><div class="footer-col"><h4>Programs</h4><ul><li><a href="programs.html#play-group">Play Group</a></li><li><a href="programs.html#nursery">Nursery</a></li><li><a href="programs.html#jr-kg">Jr KG</a></li><li><a href="programs.html#sr-kg">Sr KG</a></li><li><a href="programs.html#1st-std">1st Standard</a></li><li><a href="programs.html#2nd-std">2nd Standard</a></li><li><a href="programs.html#3rd-std">3rd Standard</a></li><li><a href="programs.html#4th-std">4th Standard</a></li></ul></div><div class="footer-col"><h4>Contact Info</h4><ul><li><a href="https://maps.app.goo.gl/6v3YLGGdusY3NSTS7" target="_blank">📍 1794, A, Brahmeshwar bag, shivaji peth, kolhapur.</a></li><li><a href="tel:02312621010">📞 0231-2621010</a></li><li><a href="mailto:school.alphakop@gmail.com">✉️ school.alphakop@gmail.com</a></li><li><a href="enquiry.html">🕐 Mon-Sat: 9 AM – 2:30 PM</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Alphabet'z School, Kolhapur. All rights reserved.</p><p>Designed with ❤️ for young learners | Powered by <strong>weblinkers™</strong></p></div></div></footer>
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+  <script>
+    const navbar=document.getElementById('navbar');window.addEventListener('scroll',()=>{window.scrollY>60?navbar.classList.add('scrolled'):navbar.classList.remove('scrolled')});
+    const menuToggle=document.getElementById('menuToggle'),navLinks=document.getElementById('navLinks'),navOverlay=document.getElementById('navOverlay');function toggleMenu(){menuToggle.classList.toggle('active');navLinks.classList.toggle('active');navOverlay.classList.toggle('active');document.body.style.overflow=navLinks.classList.contains('active')?'hidden':''}menuToggle.addEventListener('click',toggleMenu);navOverlay.addEventListener('click',toggleMenu);document.querySelectorAll('.nav-links a').forEach(l=>l.addEventListener('click',()=>{navLinks.classList.contains('active')&&toggleMenu()}));
+    const revealEls=document.querySelectorAll('.reveal,.reveal-left,.reveal-right');const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revObs.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -60px 0px'});revealEls.forEach(el=>revObs.observe(el));
+    // Counter animation
+    const statNums=document.querySelectorAll('.stat-num[data-count]');const cObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const t=e.target,c=parseInt(t.dataset.count,10);let cur=0;const inc=c/60,sfx='+';const tmr=setInterval(()=>{cur+=inc;if(cur>=c){cur=c;clearInterval(tmr)}t.textContent=Math.floor(cur)+sfx},25);cObs.unobserve(t)}})},{threshold:.5});statNums.forEach(el=>cObs.observe(el));
+    const scrollTopBtn=document.getElementById('scrollTopBtn');window.addEventListener('scroll',()=>{window.scrollY>500?scrollTopBtn.classList.add('visible'):scrollTopBtn.classList.remove('visible')});scrollTopBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){const h=this.getAttribute('href');if(h==='#')return;e.preventDefault();const t=document.querySelector(h);if(t){const p=t.getBoundingClientRect().top+window.scrollY-navbar.offsetHeight-20;window.scrollTo({top:p,behavior:'smooth'})}}));
+  </script>
+
+  <!-- ===== FLOATING CHATBOT ===== -->
+  
+  <div class="chatbot-wrapper">
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open Chat">💬</button>
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <img src="images/logo.jpg" alt="Bot" class="chatbot-avatar-img" />
+          <div>
+            <h3>Alphabet'z Assistant</h3>
+            <p>Online</p>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbotClose" aria-label="Close Chat">&times;</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chat-msg bot">Hi there! 👋 Welcome to Alphabet'z School. How can I help you today?</div>
+      </div>
+      <div class="chatbot-options">
+        <button class="chatbot-option-btn" data-query="admission">Admissions</button>
+        <button class="chatbot-option-btn" data-query="timing">Timings</button>
+        <button class="chatbot-option-btn" data-query="location">Location</button>
+        <button class="chatbot-option-btn" data-query="program">Programs</button>
+        <button class="chatbot-option-btn" data-query="contact">Contact Info</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Chatbot Logic
+    const chatToggle = document.getElementById('chatbotToggle');
+    const chatWindow = document.getElementById('chatbotWindow');
+    const chatClose = document.getElementById('chatbotClose');
+    const chatMessages = document.getElementById('chatbotMessages');
+    const optionBtns = document.querySelectorAll('.chatbot-option-btn');
+
+    function toggleChat() {
+      chatWindow.classList.toggle('active');
+    }
+
+    chatToggle.addEventListener('click', toggleChat);
+    chatClose.addEventListener('click', toggleChat);
+
+    function addMessage(msg, type) {
+      const msgDiv = document.createElement('div');
+      msgDiv.className = `chat-msg ${type}`;
+      msgDiv.textContent = msg;
+      chatMessages.appendChild(msgDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function showTyping() {
+      const typingDiv = document.createElement('div');
+      typingDiv.className = 'chat-msg bot chat-typing';
+      typingDiv.id = 'chatTyping';
+      typingDiv.innerHTML = '<span></span><span></span><span></span>';
+      chatMessages.appendChild(typingDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function removeTyping() {
+      const typingDiv = document.getElementById('chatTyping');
+      if(typingDiv) typingDiv.remove();
+    }
+    
+    function getBotResponse(input) {
+        const text = input.toLowerCase();
+        if (text.includes("fee") || text.includes("cost")) {
+          return "Please contact the school office for detailed information regarding our fee structure.";
+        } else if (text.includes("admission") || text.includes("enroll") || text.includes("apply")) {
+          return "Admissions for 2026-27 are currently open! You can fill out the enquiry form on our Contact page or visit our campus.";
+        } else if (text.includes("time") || text.includes("timing") || text.includes("hour")) {
+          return "Our school timings are Monday to Saturday, 9:00 AM to 2:30 PM.";
+        } else if (text.includes("location") || text.includes("address") || text.includes("where")) {
+          return "We are located at 1794, A, Brahmeshwar bag, shivaji peth, kolhapur. You can find a map on our Contact page.";
+        } else if (text.includes("program") || text.includes("class") || text.includes("standard")) {
+          return "We offer classes from Play Group up to 4th Standard. You can learn more on our Programs page.";
+        } else if (text.includes("contact") || text.includes("phone") || text.includes("call") || text.includes("email")) {
+          return "You can reach us at 0231-2621010 or email school.alphakop@gmail.com.";
+        } else {
+          return "Thanks for your message. For detailed information, please check our website or contact our administration office at 0231-2621010.";
+        }
+    }
+
+    optionBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const query = btn.getAttribute('data-query');
+        const label = btn.textContent;
+        
+        // Add user message
+        addMessage(label, 'user');
+        
+        // Simulate typing and respond
+        showTyping();
+        setTimeout(() => {
+          removeTyping();
+          addMessage(getBotResponse(query), 'bot');
+        }, 1200);
+      });
+    });
+  </script>
+</body>
+
+</html>

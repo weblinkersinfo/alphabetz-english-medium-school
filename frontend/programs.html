@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programs – Alphabet'z School Kolhapur | Play Group to 4th Standard</title>
+  <meta name="description" content="Explore Alphabet'z School's programs from Play Group to 4th Standard. Discover our curriculum, extra-curricular activities, daily schedule, and learning approach for each class." />
+  <meta name="keywords" content="Alphabet'z School programs, Kolhapur school curriculum, Play Group class, primary school programs, extra-curricular activities" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
+  <style>
+    .page-hero{position:relative;padding:10rem 0 5rem;background:linear-gradient(135deg,hsl(35,40%,95%) 0%,hsl(35,30%,97%) 100%);overflow:hidden;text-align:center}
+    .page-hero::before{content:'';position:absolute;top:-40%;right:-15%;width:700px;height:700px;background:radial-gradient(circle,hsla(200,80%,50%,.08) 0%,transparent 70%);border-radius:50%;animation:float-slow 20s ease-in-out infinite}
+    .page-hero::after{content:'';position:absolute;bottom:-30%;left:-10%;width:500px;height:500px;background:radial-gradient(circle,hsla(25,90%,52%,.06) 0%,transparent 70%);border-radius:50%;animation:float-slow 15s ease-in-out infinite reverse}
+    .page-hero .container{position:relative;z-index:1}
+    .page-hero-title{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;line-height:1.15;margin-bottom:var(--space-md);animation:slideUp .8s .2s cubic-bezier(.34,1.56,.64,1) both}
+    .page-hero-desc{font-size:1.15rem;color:var(--clr-text-muted);max-width:640px;margin:0 auto var(--space-lg);line-height:1.8;animation:slideUp .8s .4s cubic-bezier(.34,1.56,.64,1) both}
+    .back-link{display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;font-weight:600;color:var(--clr-primary);margin-bottom:var(--space-md);transition:all var(--transition-fast);animation:slideDown .8s cubic-bezier(.34,1.56,.64,1) both}
+    .back-link:hover{gap:.75rem;color:var(--clr-primary-dark)}
+
+    /* Detailed Program Sections */
+    .program-detail{padding:var(--space-2xl) 0}
+    .program-detail:nth-child(odd){background:linear-gradient(180deg,var(--clr-bg) 0%,hsl(35,35%,94%) 100%)}
+    .program-detail .container{display:grid;grid-template-columns:1fr 1.3fr;gap:var(--space-xl);align-items:center}
+    .program-detail:nth-child(even) .container{direction:rtl}.program-detail:nth-child(even) .container>*{direction:ltr}
+    .program-visual{position:relative;text-align:center}
+    .program-visual-card{background:var(--clr-surface);border-radius:var(--radius-xl);padding:var(--space-xl);box-shadow:var(--shadow-lg);border:1px solid var(--clr-border);text-align:center;position:relative;overflow:hidden}
+    .program-visual-card::before{content:'';position:absolute;top:0;left:0;right:0;height:6px}
+    .pv-warm::before{background:var(--grad-warm)}.pv-sky::before{background:var(--grad-sky)}.pv-green::before{background:var(--grad-green)}.pv-purple::before{background:linear-gradient(135deg,hsl(280,65%,55%),hsl(300,60%,60%))}.pv-gold::before{background:linear-gradient(135deg,hsl(45,100%,55%),hsl(35,95%,50%))}
+    .program-emoji{font-size:4rem;margin-bottom:var(--space-sm)}
+    .program-visual-card h3{font-size:1.8rem;margin-bottom:.3rem}
+    .program-visual-card .age-badge{display:inline-block;padding:.4rem 1.2rem;background:hsla(25,90%,52%,.08);color:var(--clr-primary);border-radius:var(--radius-full);font-size:.9rem;font-weight:600;margin-top:.5rem}
+    .program-info h3{font-size:1.3rem;margin-bottom:var(--space-sm);color:var(--clr-text)}
+    .program-info .section-desc{margin-bottom:var(--space-md)}
+    .curriculum-list{display:flex;flex-direction:column;gap:.6rem;margin-top:var(--space-sm)}
+    .curriculum-item{display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;background:var(--clr-surface);border-radius:var(--radius-sm);border:1px solid var(--clr-border);font-size:.9rem;font-weight:500;transition:all var(--transition-fast)}
+    .curriculum-item:hover{border-color:var(--clr-primary);transform:translateX(4px)}
+    .curriculum-item .ci-icon{font-size:1.1rem}
+
+    /* Extra-Curricular */
+    .extra-section{padding:var(--space-2xl) 0;background:linear-gradient(135deg,hsl(220,25%,14%) 0%,hsl(220,20%,20%) 100%);color:white;position:relative;overflow:hidden}
+    .extra-section::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,hsla(25,90%,52%,.1),transparent 60%);border-radius:50%}
+    .extra-header{text-align:center;margin-bottom:var(--space-xl)}
+    .extra-header .section-label{color:var(--clr-highlight)}.extra-header .section-label::before{background:var(--clr-highlight)}.extra-header .section-title{color:white}.extra-header .section-desc{color:hsla(0,0%,100%,.65);margin:0 auto}
+    .extra-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--space-md);position:relative;z-index:1}
+    .extra-card{background:hsla(0,0%,100%,.06);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid hsla(0,0%,100%,.1);border-radius:var(--radius-lg);padding:var(--space-lg);text-align:center;transition:all var(--transition-spring)}
+    .extra-card:hover{background:hsla(0,0%,100%,.1);transform:translateY(-6px);border-color:hsla(25,90%,52%,.3)}
+    .extra-icon{width:64px;height:64px;border-radius:var(--radius-md);margin:0 auto var(--space-sm);display:flex;align-items:center;justify-content:center;font-size:1.8rem;transition:transform var(--transition-spring)}
+    .extra-card:hover .extra-icon{transform:scale(1.1) rotate(-5deg)}
+    .extra-card:nth-child(1) .extra-icon{background:hsla(25,90%,52%,.2)}.extra-card:nth-child(2) .extra-icon{background:hsla(200,80%,50%,.2)}.extra-card:nth-child(3) .extra-icon{background:hsla(145,65%,42%,.2)}.extra-card:nth-child(4) .extra-icon{background:hsla(280,65%,55%,.2)}.extra-card:nth-child(5) .extra-icon{background:hsla(45,100%,55%,.2)}.extra-card:nth-child(6) .extra-icon{background:hsla(350,70%,55%,.2)}
+    .extra-card h3{font-size:1.05rem;margin-bottom:.3rem}.extra-card p{font-size:.85rem;color:hsla(0,0%,100%,.65);line-height:1.6}
+
+    /* Daily Schedule */
+    .schedule-section{padding:var(--space-2xl) 0;background:linear-gradient(180deg,hsl(35,35%,94%) 0%,var(--clr-bg) 100%)}
+    .schedule-header{text-align:center;margin-bottom:var(--space-xl)}.schedule-header .section-desc{margin:0 auto}
+    .schedule-table-wrap{max-width:700px;margin:0 auto;background:var(--clr-surface);border-radius:var(--radius-lg);border:1px solid var(--clr-border);box-shadow:var(--shadow-md);overflow:hidden}
+    .schedule-table{width:100%;border-collapse:collapse}
+    .schedule-table thead{background:var(--grad-hero)}
+    .schedule-table th{padding:1rem 1.25rem;text-align:left;font-family:var(--font-heading);font-weight:700;font-size:.9rem;color:white}
+    .schedule-table td{padding:.85rem 1.25rem;font-size:.92rem;color:var(--clr-text);border-bottom:1px solid var(--clr-border)}
+    .schedule-table tbody tr{transition:background var(--transition-fast)}
+    .schedule-table tbody tr:hover{background:hsla(25,90%,52%,.04)}
+    .schedule-table tbody tr:last-child td{border-bottom:none}
+    .schedule-table .time-col{font-weight:600;color:var(--clr-primary);font-family:var(--font-heading);white-space:nowrap}
+
+    @media(max-width:768px){.program-detail .container{grid-template-columns:1fr}.program-detail:nth-child(even) .container{direction:ltr}.extra-grid{grid-template-columns:1fr}.schedule-table th,.schedule-table td{padding:.7rem .8rem;font-size:.82rem}}
+    @media(max-width:480px){.page-hero{padding:8rem 0 3rem}.page-hero-title{font-size:1.8rem}}
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar"><div class="container"><a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="Logo" class="nav-logo-img" /><span class="nav-logo-text">Alphabet'z School</span></a><ul class="nav-links" id="navLinks"><li><a href="about.html">About</a></li><li><a href="programs.html" class="active">Programs</a></li><li><a href="whyus.html">Why Us</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="enquiry.html">Contact</a></li><li><a href="admission.html" class="nav-cta">Admissions Open</a></li></ul><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button></div><div class="nav-overlay" id="navOverlay"></div></nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+      <div class="hero-badge"><span class="badge-dot"></span>Play Group to 4th Std</div>
+      <h1 class="page-hero-title">Programs Designed to <span class="highlight">Inspire</span></h1>
+      <p class="page-hero-desc">From the first playful steps to building academic confidence, our carefully designed programs ensure every child grows at their own pace — with joy and curiosity.</p>
+    </div>
+  </section>
+
+  <!-- Play Group -->
+  <section class="program-detail" id="play-group">
+    <div class="container">
+      <div class="program-visual reveal-left">
+        <div class="program-visual-card pv-warm"><div class="program-emoji">🎪</div><h3>Play Group</h3><span class="age-badge">2.5yrs+</span></div>
+      </div>
+      <div class="program-info reveal-right">
+        <span class="section-label">Pre-Primary</span>
+        <h2 class="section-title">Where Learning Begins with Play</h2>
+        <p class="section-desc">The Play Group program is designed to introduce your child to the world of school through fun, play, and sensory exploration. Every activity is crafted to develop motor skills, social awareness, and a love for learning.</p>
+        <div class="curriculum-list">
+          <div class="curriculum-item"><span class="ci-icon">🎵</span>Rhymes, Songs & Storytelling</div>
+          <div class="curriculum-item"><span class="ci-icon">🎨</span>Art, Craft & Sensory Play</div>
+          <div class="curriculum-item"><span class="ci-icon">🔤</span>Alphabet & Number Recognition</div>
+          <div class="curriculum-item"><span class="ci-icon">🤝</span>Social Skills & Group Activities</div>
+          <div class="curriculum-item"><span class="ci-icon">🏃</span>Free Play & Outdoor Time</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NURSERY -->
+  <section class="program-detail" id="nursery">
+    <div class="container">
+      <div class="program-visual reveal-left">
+        <div class="program-visual-card pv-gold"><div class="program-emoji">🧸</div><h3>Nursery</h3><span class="age-badge">3yrs+</span></div>
+      </div>
+      <div class="program-info reveal-right">
+        <span class="section-label">Early Years</span>
+        <h2 class="section-title">Discovering the World</h2>
+        <p class="section-desc">A nurturing environment focused on early socialization, sensory play, and basic conceptual learning to foster a love for education.</p>
+        <div class="curriculum-list">
+          <div class="curriculum-item"><span class="ci-icon">🎶</span>Rhymes & Finger Play</div>
+          <div class="curriculum-item"><span class="ci-icon">🖍️</span>Scribbling & Coloring</div>
+          <div class="curriculum-item"><span class="ci-icon">🧸</span>Sensory & Motor Skills</div>
+          <div class="curriculum-item"><span class="ci-icon">🧩</span>Basic Shapes & Colors</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JR KG -->
+  <section class="program-detail" id="jr-kg">
+    <div class="container">
+      <div class="program-visual reveal-left">
+        <div class="program-visual-card pv-green"><div class="program-emoji">🖍️</div><h3>Jr KG</h3><span class="age-badge">4yrs+</span></div>
+      </div>
+      <div class="program-info reveal-right">
+        <span class="section-label">Kindergarten</span>
+        <h2 class="section-title">Step into Structured Learning</h2>
+        <p class="section-desc">Introduction to structured learning, focusing on vocabulary, motor skills, and interactive activities that encourage early independence.</p>
+        <div class="curriculum-list">
+          <div class="curriculum-item"><span class="ci-icon">🔤</span>Alphabet & Phonics</div>
+          <div class="curriculum-item"><span class="ci-icon">🔢</span>Numbers & Counting</div>
+          <div class="curriculum-item"><span class="ci-icon">✍️</span>Pattern Writing</div>
+          <div class="curriculum-item"><span class="ci-icon">🤝</span>Group Play & Sharing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SR KG -->
+  <section class="program-detail" id="sr-kg">
+    <div class="container">
+      <div class="program-visual reveal-left">
+        <div class="program-visual-card pv-purple"><div class="program-emoji">🧩</div><h3>Sr KG</h3><span class="age-badge">5yrs+</span></div>
+      </div>
+      <div class="program-info reveal-right">
+        <span class="section-label">Kindergarten</span>
+        <h2 class="section-title">Ready for Primary School</h2>
+        <p class="section-desc">Building early reading and writing skills, numerical concepts, and preparing children with the confidence needed for primary school.</p>
+        <div class="curriculum-list">
+          <div class="curriculum-item"><span class="ci-icon">📖</span>Reading & Sight Words</div>
+          <div class="curriculum-item"><span class="ci-icon">✏️</span>Writing Simple Words</div>
+          <div class="curriculum-item"><span class="ci-icon">➕</span>Basic Addition Concepts</div>
+          <div class="curriculum-item"><span class="ci-icon">🌍</span>Understanding Our Environment</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1ST STD -->
+  <section class="program-detail" id="1st-std">
+    <div class="container">
+      <div class="program-visual reveal-left">
+        <div class="program-visual-card pv-sky"><div class="program-emoji">🌸</div><h3>1st Standard</h3><span class="age-badge">6yrs+</span></div>
+      </div>
+      <div class="program-info reveal-right">
+        <span class="section-label">Foundation Year</span>
+        <h2 class="section-title">Building the Strong Foundation</h2>
+        <p class="section-desc">The transition from play-based learning to structured education. We introduce phonics, basic numeracy, and early writing while keeping the environment warm and encouraging.</p>
+        <div class="curriculum-list">
+          <div class="curriculum-item"><span class="ci-icon">📖</span>Phonics & Early Reading</div>
+          <div class="curriculum-item"><span class="ci-icon">🔢</span>Basic Mathematics & Counting</div>
+          <div class="curriculum-item"><span class="ci-icon">✍️</span>Handwriting & Creative Expression</div>
+          <div class="curriculum-item"><span class="ci-icon">🌍</span>Environmental Awareness</div>
+          <div class="curriculum-item"><span class="ci-icon">🗣️</span>Spoken English & Communication</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2ND STD -->
+  <section class="program-detail" id="2nd-std">
+    <div class="container">
+      <div class="program-visual reveal-left">
+        <div class="program-visual-card pv-green"><div class="program-emoji">🚀</div><h3>2nd Standard</h3><span class="age-badge">7yrs+</span></div>
+      </div>
+      <div class="program-info reveal-right">
+        <span class="section-label">Growth Year</span>
+        <h2 class="section-title">Expanding Horizons</h2>
+        <p class="section-desc">Students develop reading fluency, creative writing, and mathematical thinking. Science curiosity is ignited through hands-on experiments and nature study.</p>
+        <div class="curriculum-list">
+          <div class="curriculum-item"><span class="ci-icon">📚</span>Reading Fluency & Comprehension</div>
+          <div class="curriculum-item"><span class="ci-icon">✏️</span>Creative Writing & Paragraphs</div>
+          <div class="curriculum-item"><span class="ci-icon">➕</span>Addition, Subtraction & Shapes</div>
+          <div class="curriculum-item"><span class="ci-icon">🔬</span>Basic Science & Experiments</div>
+          <div class="curriculum-item"><span class="ci-icon">🌿</span>Environmental Studies (EVS)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3RD STD -->
+  <section class="program-detail" id="3rd-std">
+    <div class="container">
+      <div class="program-visual reveal-left">
+        <div class="program-visual-card pv-purple"><div class="program-emoji">🔬</div><h3>3rd Standard</h3><span class="age-badge">8yrs+</span></div>
+      </div>
+      <div class="program-info reveal-right">
+        <span class="section-label">Exploration Year</span>
+        <h2 class="section-title">Deeper Knowledge & Critical Thinking</h2>
+        <p class="section-desc">Project-based learning takes center stage. Students develop analytical skills, collaborative problem-solving, and confidence in presenting their ideas.</p>
+        <div class="curriculum-list">
+          <div class="curriculum-item"><span class="ci-icon">📊</span>Multiplication, Division & Fractions</div>
+          <div class="curriculum-item"><span class="ci-icon">📝</span>Essay Writing & Grammar</div>
+          <div class="curriculum-item"><span class="ci-icon">🧪</span>Advanced Science & Projects</div>
+          <div class="curriculum-item"><span class="ci-icon">🗺️</span>Social Studies & Geography</div>
+          <div class="curriculum-item"><span class="ci-icon">💻</span>Introduction to Computers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4TH STD -->
+  <section class="program-detail" id="4th-std">
+    <div class="container">
+      <div class="program-visual reveal-left">
+        <div class="program-visual-card pv-gold"><div class="program-emoji">🏆</div><h3>4th Standard</h3><span class="age-badge">9yrs+</span></div>
+      </div>
+      <div class="program-info reveal-right">
+        <span class="section-label">Mastery Year</span>
+        <h2 class="section-title">The Launchpad for Higher Education</h2>
+        <p class="section-desc">Our most advanced program prepares confident learners with strong academics, leadership opportunities, competitive exam readiness, and public speaking skills.</p>
+        <div class="curriculum-list">
+          <div class="curriculum-item"><span class="ci-icon">📐</span>Advanced Mathematics & Problem Solving</div>
+          <div class="curriculum-item"><span class="ci-icon">📖</span>Literature, Comprehension & Debate</div>
+          <div class="curriculum-item"><span class="ci-icon">🔬</span>Science Projects & Innovation</div>
+          <div class="curriculum-item"><span class="ci-icon">🏅</span>Competitive Exam Preparation</div>
+          <div class="curriculum-item"><span class="ci-icon">🎤</span>Leadership & Public Speaking</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTRA-CURRICULAR -->
+  <section class="extra-section">
+    <div class="container">
+      <div class="extra-header reveal">
+        <span class="section-label">Beyond Academics</span>
+        <h2 class="section-title">Extra-Curricular Activities</h2>
+        <p class="section-desc">We believe in the all-round development of every child. These activities run alongside academics throughout the year.</p>
+      </div>
+      <div class="extra-grid">
+        <div class="extra-card reveal" style="transition-delay:.1s"><div class="extra-icon">🏃</div><h3>Sports & Games</h3><p>Cricket, football, running, yoga, and annual sports day competitions.</p></div>
+        <div class="extra-card reveal" style="transition-delay:.2s"><div class="extra-icon">🎵</div><h3>Music & Dance</h3><p>Classical and western music classes, dance workshops, and stage performances.</p></div>
+        <div class="extra-card reveal" style="transition-delay:.3s"><div class="extra-icon">🎨</div><h3>Art & Craft</h3><p>Drawing, painting, clay modeling, origami, and craft projects for creativity.</p></div>
+        <div class="extra-card reveal" style="transition-delay:.4s"><div class="extra-icon">🎭</div><h3>Drama & Theatre</h3><p>Skits, role-playing, puppet shows, and annual drama festival participation.</p></div>
+        <div class="extra-card reveal" style="transition-delay:.5s"><div class="extra-icon">📖</div><h3>Reading Club</h3><p>Weekly storytelling sessions, book reviews, and reading competitions.</p></div>
+        <div class="extra-card reveal" style="transition-delay:.6s"><div class="extra-icon">🌱</div><h3>Nature & Eco Club</h3><p>Gardening, nature walks, recycling projects, and environment awareness.</p></div>
+      </div>
+      <div style="margin-top: 4rem; text-align: center;" class="reveal">
+        <img src="images/Extra.png" alt="Extra Curricular Activities at Alphabet'z School" style="border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); max-width: 100%; height: auto; object-fit: cover; border: 4px solid white;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- DAILY SCHEDULE -->
+  <section class="schedule-section">
+    <div class="container">
+      <div class="schedule-header reveal">
+        <span class="section-label">A Day at Alphabet'z</span>
+        <h2 class="section-title">Typical Daily Schedule</h2>
+        <p class="section-desc">A well-balanced day that combines focused learning, creative activities, and plenty of play time.</p>
+      </div>
+      <div class="schedule-tables">
+        <h3 style="text-align:center; margin-bottom: 1.5rem; color: var(--clr-primary);">1st to 4th Standard (9:00 AM – 2:30 PM)</h3>
+        <div class="schedule-table-wrap reveal">
+          <table class="schedule-table">
+            <thead><tr><th>Time</th><th>Activity</th></tr></thead>
+            <tbody>
+              <tr><td class="time-col">9:00 AM</td><td>🙏 Assembly & Prayer</td></tr>
+              <tr><td class="time-col">9:30 AM</td><td>📚 Core Subject (Language / Math)</td></tr>
+              <tr><td class="time-col">10:30 AM</td><td>🍎 Snack Break</td></tr>
+              <tr><td class="time-col">11:00 AM</td><td>🔬 Science / EVS / Social Studies</td></tr>
+              <tr><td class="time-col">12:00 PM</td><td>🍱 Lunch Break</td></tr>
+              <tr><td class="time-col">12:30 PM</td><td>🏃 Sports / Activity / Art</td></tr>
+              <tr><td class="time-col">1:30 PM</td><td>💻 Library / Computer / Revision</td></tr>
+              <tr><td class="time-col">2:30 PM</td><td>🏠 Dismissal</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="text-align:center; margin-top: 4rem; margin-bottom: 1.5rem; color: var(--clr-primary);">Play Group to Sr. KG – Shift 1 (9:00 AM – 12:00 PM)</h3>
+        <div class="schedule-table-wrap reveal">
+          <table class="schedule-table">
+            <thead><tr><th>Time</th><th>Activity</th></tr></thead>
+            <tbody>
+              <tr><td class="time-col">9:00 AM</td><td>🙏 Circle Time & Prayer</td></tr>
+              <tr><td class="time-col">9:30 AM</td><td>🎨 Activity-Based Learning</td></tr>
+              <tr><td class="time-col">10:30 AM</td><td>🍎 Snack Break</td></tr>
+              <tr><td class="time-col">11:00 AM</td><td>🏃 Free Play & Story Time</td></tr>
+              <tr><td class="time-col">12:00 PM</td><td>🏠 Dismissal</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="text-align:center; margin-top: 4rem; margin-bottom: 1.5rem; color: var(--clr-primary);">Play Group to Sr. KG – Shift 2 (12:30 PM – 3:30 PM)</h3>
+        <div class="schedule-table-wrap reveal">
+          <table class="schedule-table">
+            <thead><tr><th>Time</th><th>Activity</th></tr></thead>
+            <tbody>
+              <tr><td class="time-col">12:30 PM</td><td>🙏 Circle Time & Prayer</td></tr>
+              <tr><td class="time-col">1:00 PM</td><td>🎨 Activity-Based Learning</td></tr>
+              <tr><td class="time-col">2:00 PM</td><td>🍎 Snack Break</td></tr>
+              <tr><td class="time-col">2:30 PM</td><td>🏃 Free Play & Story Time</td></tr>
+              <tr><td class="time-col">3:30 PM</td><td>🏠 Dismissal</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta"><div class="container"><div class="cta-box reveal"><div class="cta-content"><h2>🎓 Find the Right Program for Your Child</h2><p>Not sure which class is right? Our team can help you choose the perfect program based on your child's age and development.</p><a href="enquiry.html" class="btn btn-white">✨ Enquire Now</a></div></div></div></section>
+
+  <!-- FOOTER -->
+  <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="Logo" class="nav-logo-img" /><span class="nav-logo-text">Alphabet'z School</span></a><p>Nurturing young minds since 2015. Alphabet'z School is committed to providing quality education in a joyful and safe learning environment in Kolhapur.</p><div class="footer-social"><a href="#" aria-label="Facebook">📘</a><a href="#" aria-label="Instagram">📸</a><a href="#" aria-label="YouTube">🎬</a><a href="https://wa.me/919112124440" aria-label="WhatsApp">💬</a></div></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="whyus.html">Why Choose Us</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="enquiry.html">Enquiry</a></li></ul></div><div class="footer-col"><h4>Programs</h4><ul><li><a href="programs.html#play-group">Play Group</a></li><li><a href="programs.html#nursery">Nursery</a></li><li><a href="programs.html#jr-kg">Jr KG</a></li><li><a href="programs.html#sr-kg">Sr KG</a></li><li><a href="programs.html#1st-std">1st Standard</a></li><li><a href="programs.html#2nd-std">2nd Standard</a></li><li><a href="programs.html#3rd-std">3rd Standard</a></li><li><a href="programs.html#4th-std">4th Standard</a></li></ul></div><div class="footer-col"><h4>Contact Info</h4><ul><li><a href="https://maps.app.goo.gl/6v3YLGGdusY3NSTS7" target="_blank">📍 1794, A, Brahmeshwar bag, shivaji peth, kolhapur.</a></li><li><a href="tel:02312621010">📞 0231-2621010</a></li><li><a href="mailto:school.alphakop@gmail.com">✉️ school.alphakop@gmail.com</a></li><li><a href="enquiry.html">🕐 Mon-Sat: 9 AM – 2:30 PM</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Alphabet'z School, Kolhapur. All rights reserved.</p><p>Designed with ❤️ for young learners | Powered by <strong>weblinkers™</strong></p></div></div></footer>
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+  <script>
+    const navbar=document.getElementById('navbar');window.addEventListener('scroll',()=>{window.scrollY>60?navbar.classList.add('scrolled'):navbar.classList.remove('scrolled')});
+    const menuToggle=document.getElementById('menuToggle'),navLinks=document.getElementById('navLinks'),navOverlay=document.getElementById('navOverlay');function toggleMenu(){menuToggle.classList.toggle('active');navLinks.classList.toggle('active');navOverlay.classList.toggle('active');document.body.style.overflow=navLinks.classList.contains('active')?'hidden':''}menuToggle.addEventListener('click',toggleMenu);navOverlay.addEventListener('click',toggleMenu);document.querySelectorAll('.nav-links a').forEach(l=>l.addEventListener('click',()=>{navLinks.classList.contains('active')&&toggleMenu()}));
+    const revealEls=document.querySelectorAll('.reveal,.reveal-left,.reveal-right');const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revObs.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -60px 0px'});revealEls.forEach(el=>revObs.observe(el));
+    const scrollTopBtn=document.getElementById('scrollTopBtn');window.addEventListener('scroll',()=>{window.scrollY>500?scrollTopBtn.classList.add('visible'):scrollTopBtn.classList.remove('visible')});scrollTopBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){const h=this.getAttribute('href');if(h==='#')return;e.preventDefault();const t=document.querySelector(h);if(t){const p=t.getBoundingClientRect().top+window.scrollY-navbar.offsetHeight-20;window.scrollTo({top:p,behavior:'smooth'})}}));
+  </script>
+
+  <!-- ===== FLOATING CHATBOT ===== -->
+  
+  <div class="chatbot-wrapper">
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open Chat">💬</button>
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <img src="images/logo.jpg" alt="Bot" class="chatbot-avatar-img" />
+          <div>
+            <h3>Alphabet'z Assistant</h3>
+            <p>Online</p>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbotClose" aria-label="Close Chat">&times;</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chat-msg bot">Hi there! 👋 Welcome to Alphabet'z School. How can I help you today?</div>
+      </div>
+      <div class="chatbot-options">
+        <button class="chatbot-option-btn" data-query="admission">Admissions</button>
+        <button class="chatbot-option-btn" data-query="timing">Timings</button>
+        <button class="chatbot-option-btn" data-query="location">Location</button>
+        <button class="chatbot-option-btn" data-query="program">Programs</button>
+        <button class="chatbot-option-btn" data-query="contact">Contact Info</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Chatbot Logic
+    const chatToggle = document.getElementById('chatbotToggle');
+    const chatWindow = document.getElementById('chatbotWindow');
+    const chatClose = document.getElementById('chatbotClose');
+    const chatMessages = document.getElementById('chatbotMessages');
+    const optionBtns = document.querySelectorAll('.chatbot-option-btn');
+
+    function toggleChat() {
+      chatWindow.classList.toggle('active');
+    }
+
+    chatToggle.addEventListener('click', toggleChat);
+    chatClose.addEventListener('click', toggleChat);
+
+    function addMessage(msg, type) {
+      const msgDiv = document.createElement('div');
+      msgDiv.className = `chat-msg ${type}`;
+      msgDiv.textContent = msg;
+      chatMessages.appendChild(msgDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function showTyping() {
+      const typingDiv = document.createElement('div');
+      typingDiv.className = 'chat-msg bot chat-typing';
+      typingDiv.id = 'chatTyping';
+      typingDiv.innerHTML = '<span></span><span></span><span></span>';
+      chatMessages.appendChild(typingDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function removeTyping() {
+      const typingDiv = document.getElementById('chatTyping');
+      if(typingDiv) typingDiv.remove();
+    }
+    
+    function getBotResponse(input) {
+        const text = input.toLowerCase();
+        if (text.includes("fee") || text.includes("cost")) {
+          return "Please contact the school office for detailed information regarding our fee structure.";
+        } else if (text.includes("admission") || text.includes("enroll") || text.includes("apply")) {
+          return "Admissions for 2026-27 are currently open! You can fill out the enquiry form on our Contact page or visit our campus.";
+        } else if (text.includes("time") || text.includes("timing") || text.includes("hour")) {
+          return "Our school timings are Monday to Saturday, 9:00 AM to 2:30 PM.";
+        } else if (text.includes("location") || text.includes("address") || text.includes("where")) {
+          return "We are located at 1794, A, Brahmeshwar bag, shivaji peth, kolhapur. You can find a map on our Contact page.";
+        } else if (text.includes("program") || text.includes("class") || text.includes("standard")) {
+          return "We offer classes from Play Group up to 4th Standard. You can learn more on our Programs page.";
+        } else if (text.includes("contact") || text.includes("phone") || text.includes("call") || text.includes("email")) {
+          return "You can reach us at 0231-2621010 or email school.alphakop@gmail.com.";
+        } else {
+          return "Thanks for your message. For detailed information, please check our website or contact our administration office at 0231-2621010.";
+        }
+    }
+
+    optionBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const query = btn.getAttribute('data-query');
+        const label = btn.textContent;
+        
+        // Add user message
+        addMessage(label, 'user');
+        
+        // Simulate typing and respond
+        showTyping();
+        setTimeout(() => {
+          removeTyping();
+          addMessage(getBotResponse(query), 'bot');
+        }, 1200);
+      });
+    });
+  </script>
+</body>
+
+</html>
+

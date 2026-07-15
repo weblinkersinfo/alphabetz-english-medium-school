@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Enquiry – Alphabet'z School Kolhapur | Get in Touch</title>
+  <meta name="description" content="Have questions about Alphabet'z School, Kolhapur? Submit an admission enquiry, schedule a campus visit, or reach out to us via phone, email, or in person. We'd love to hear from you!" />
+  <meta name="keywords" content="Alphabet'z School enquiry, contact Alphabet'z School Kolhapur, school admission enquiry, campus visit Kolhapur, school phone number" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
+
+  <style>
+    /* ===== Enquiry Page Specific Styles ===== */
+
+    /* Page Hero */
+    .enquiry-hero {
+      position: relative;
+      padding: 10rem 0 5rem;
+      background: linear-gradient(135deg, hsl(35, 40%, 95%) 0%, hsl(35, 30%, 97%) 100%);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .enquiry-hero::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -15%;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, hsla(200, 80%, 50%, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      animation: float-slow 20s ease-in-out infinite;
+    }
+
+    .enquiry-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, hsla(25, 90%, 52%, 0.06) 0%, transparent 70%);
+      border-radius: 50%;
+      animation: float-slow 15s ease-in-out infinite reverse;
+    }
+
+    .enquiry-hero .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .enquiry-hero-title {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: var(--space-md);
+      animation: slideUp 0.8s 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    .enquiry-hero-desc {
+      font-size: 1.15rem;
+      color: var(--clr-text-muted);
+      max-width: 640px;
+      margin: 0 auto var(--space-lg);
+      line-height: 1.8;
+      animation: slideUp 0.8s 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    /* Quick contact pills */
+    .hero-quick-contacts {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      flex-wrap: wrap;
+      animation: slideUp 0.8s 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    .quick-contact-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: black;
+      text-decoration: none;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-spring);
+    }
+
+    .quick-contact-pill:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--clr-primary);
+      color: var(--clr-primary);
+    }
+
+    .quick-contact-pill .pill-icon {
+      font-size: 1.1rem;
+    }
+
+    /* Back Link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--clr-primary);
+      margin-bottom: var(--space-md);
+      transition: all var(--transition-fast);
+      animation: slideDown 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    .back-link:hover {
+      gap: 0.75rem;
+      color: var(--clr-primary-dark);
+    }
+
+    /* ===== Contact Info Cards ===== */
+    .contact-cards {
+      padding: var(--space-2xl) 0;
+    }
+
+    .contact-cards-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+    }
+
+    .contact-cards-header .section-desc {
+      margin: 0 auto;
+    }
+
+    .contact-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-md);
+    }
+
+    .info-card {
+      background: var(--clr-surface);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--clr-border);
+      transition: all var(--transition-spring);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .info-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+      transition: height var(--transition-smooth);
+    }
+
+    .info-card:nth-child(1)::before { background: var(--grad-warm); }
+    .info-card:nth-child(2)::before { background: var(--grad-sky); }
+    .info-card:nth-child(3)::before { background: var(--grad-green); }
+    .info-card:nth-child(4)::before { background: linear-gradient(135deg, hsl(280, 65%, 55%), hsl(300, 60%, 60%)); }
+
+    .info-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: transparent;
+    }
+
+    .info-card:hover::before {
+      height: 6px;
+    }
+
+    .info-card-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto var(--space-sm);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      transition: transform var(--transition-spring);
+    }
+
+    .info-card:hover .info-card-icon {
+      transform: scale(1.1) rotate(-5deg);
+    }
+
+    .info-card:nth-child(1) .info-card-icon { background: hsla(25, 90%, 52%, 0.12); }
+    .info-card:nth-child(2) .info-card-icon { background: hsla(200, 80%, 50%, 0.12); }
+    .info-card:nth-child(3) .info-card-icon { background: hsla(145, 65%, 42%, 0.12); }
+    .info-card:nth-child(4) .info-card-icon { background: hsla(280, 65%, 55%, 0.12); }
+
+    .info-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .info-card p {
+      font-size: 0.9rem;
+      color: var(--clr-text-muted);
+      line-height: 1.6;
+    }
+
+    .info-card .info-link {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--clr-primary);
+      transition: all var(--transition-fast);
+    }
+
+    .info-card .info-link:hover {
+      color: var(--clr-primary-dark);
+      text-decoration: underline;
+    }
+
+    /* ===== Enquiry Form Section ===== */
+    .enquiry-form-section {
+      padding: var(--space-2xl) 0;
+      background: linear-gradient(180deg, var(--clr-bg) 0%, hsl(35, 35%, 94%) 100%);
+    }
+
+    .enquiry-form-section .container {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: var(--space-xl);
+      align-items: start;
+    }
+
+    .form-info {
+      padding: var(--space-md) 0;
+    }
+
+    .form-info .section-desc {
+      margin-bottom: var(--space-lg);
+    }
+
+    .form-benefits {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .form-benefit {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: var(--space-sm) var(--space-md);
+      background: var(--clr-surface);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-spring);
+    }
+
+    .form-benefit:hover {
+      transform: translateX(8px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--clr-primary);
+    }
+
+    .form-benefit-icon {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+
+    .form-benefit:nth-child(1) .form-benefit-icon { background: hsla(25, 90%, 52%, 0.12); }
+    .form-benefit:nth-child(2) .form-benefit-icon { background: hsla(200, 80%, 50%, 0.12); }
+    .form-benefit:nth-child(3) .form-benefit-icon { background: hsla(145, 65%, 42%, 0.12); }
+    .form-benefit:nth-child(4) .form-benefit-icon { background: hsla(280, 65%, 55%, 0.12); }
+    .form-benefit:nth-child(5) .form-benefit-icon { background: hsla(45, 100%, 55%, 0.12); }
+
+    .form-benefit-text h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .form-benefit-text p {
+      font-size: 0.82rem;
+      color: var(--clr-text-muted);
+      line-height: 1.5;
+    }
+
+    /* Enhanced form */
+    .enquiry-form-card {
+      background: var(--clr-surface);
+      border-radius: var(--radius-xl);
+      padding: var(--space-lg) var(--space-xl);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--clr-border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .enquiry-form-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: var(--grad-hero);
+    }
+
+    .form-card-header {
+      text-align: center;
+      margin-bottom: var(--space-lg);
+    }
+
+    .form-card-header h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .form-card-header p {
+      font-size: 0.9rem;
+      color: var(--clr-text-muted);
+    }
+
+    .form-divider {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin: var(--space-md) 0;
+    }
+
+    .form-divider::before,
+    .form-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--clr-border);
+    }
+
+    .form-divider span {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--clr-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      white-space: nowrap;
+    }
+
+    /* Form field enhancements */
+    .form-group-enhanced {
+      margin-bottom: var(--space-md);
+    }
+
+    .form-group-enhanced label {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--clr-text);
+    }
+
+    .form-group-enhanced label .label-icon {
+      font-size: 1rem;
+    }
+
+    .form-group-enhanced label .required-star {
+      color: hsl(0, 70%, 55%);
+      font-weight: 700;
+    }
+
+    .form-group-enhanced input,
+    .form-group-enhanced select,
+    .form-group-enhanced textarea {
+      width: 100%;
+      padding: 0.85rem 1.1rem;
+      border: 2px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--clr-text);
+      background: var(--clr-bg);
+      transition: all var(--transition-fast);
+      outline: none;
+    }
+
+    .form-group-enhanced input:focus,
+    .form-group-enhanced select:focus,
+    .form-group-enhanced textarea:focus {
+      border-color: var(--clr-primary);
+      box-shadow: 0 0 0 4px hsla(25, 90%, 52%, 0.1);
+      background: var(--clr-surface);
+    }
+
+    .form-group-enhanced textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-group-enhanced .input-hint {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--clr-text-muted);
+      margin-top: 4px;
+    }
+
+    .form-row-enhanced {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-sm);
+    }
+
+    /* Enquiry type selector */
+    .enquiry-type-selector {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-xs);
+      margin-bottom: var(--space-md);
+    }
+
+    .enquiry-type-option {
+      position: relative;
+    }
+
+    .enquiry-type-option input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .enquiry-type-label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+      padding: var(--space-sm) var(--space-xs);
+      border: 2px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      text-align: center;
+      transition: all var(--transition-fast);
+      font-size: 0.82rem;
+      font-weight: 600;
+      background: var(--clr-bg);
+    }
+
+    .enquiry-type-label .type-icon {
+      font-size: 1.5rem;
+    }
+
+    .enquiry-type-option input[type="radio"]:checked + .enquiry-type-label {
+      border-color: var(--clr-primary);
+      background: hsla(25, 90%, 52%, 0.06);
+      color: var(--clr-primary);
+      box-shadow: 0 0 0 3px hsla(25, 90%, 52%, 0.1);
+    }
+
+    .enquiry-type-label:hover {
+      border-color: var(--clr-primary-light);
+      background: hsla(25, 90%, 52%, 0.03);
+    }
+
+    /* Consent */
+    .consent-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      margin: var(--space-md) 0;
+    }
+
+    .consent-group input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      margin-top: 2px;
+      accent-color: var(--clr-primary);
+      cursor: pointer;
+    }
+
+    .consent-group label {
+      font-size: 0.85rem;
+      color: var(--clr-text-muted);
+      line-height: 1.5;
+      cursor: pointer;
+    }
+
+    /* Submit button */
+    .btn-submit-enhanced {
+      width: 100%;
+      justify-content: center;
+      padding: 1rem 2rem;
+      font-size: 1.05rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-submit-enhanced::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: hsla(0, 0%, 100%, 0.2);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+
+    .btn-submit-enhanced:active::after {
+      width: 400px;
+      height: 400px;
+    }
+
+    /* Success overlay */
+    .form-success-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: hsla(0, 0%, 100%, 0.96);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      border-radius: var(--radius-xl);
+      z-index: 10;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-smooth);
+    }
+
+    .form-success-overlay.visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--grad-green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      box-shadow: 0 8px 24px hsla(145, 65%, 42%, 0.3);
+      animation: successBounce 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    @keyframes successBounce {
+      0% { transform: scale(0); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    .form-success-overlay h3 {
+      font-size: 1.5rem;
+      color: var(--clr-text);
+    }
+
+    .form-success-overlay p {
+      font-size: 0.95rem;
+      color: var(--clr-text-muted);
+      text-align: center;
+      max-width: 380px;
+      line-height: 1.6;
+    }
+
+    /* ===== Visit Section ===== */
+    .visit-section {
+      padding: var(--space-2xl) 0;
+      background: linear-gradient(135deg, hsl(220, 25%, 14%) 0%, hsl(220, 20%, 20%) 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .visit-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, hsla(25, 90%, 52%, 0.1), transparent 60%);
+      border-radius: 50%;
+    }
+
+    .visit-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+    }
+
+    .visit-header .section-label {
+      color: var(--clr-highlight);
+    }
+
+    .visit-header .section-label::before {
+      background: var(--clr-highlight);
+    }
+
+    .visit-header .section-title {
+      color: white;
+    }
+
+    .visit-header .section-desc {
+      color: hsla(0, 0%, 100%, 0.65);
+      margin: 0 auto;
+    }
+
+    .visit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+      position: relative;
+      z-index: 1;
+    }
+
+    .visit-card {
+      background: hsla(0, 0%, 100%, 0.06);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid hsla(0, 0%, 100%, 0.1);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      text-align: center;
+      transition: all var(--transition-spring);
+    }
+
+    .visit-card:hover {
+      background: hsla(0, 0%, 100%, 0.1);
+      transform: translateY(-6px);
+      border-color: hsla(25, 90%, 52%, 0.3);
+    }
+
+    .visit-card-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: var(--radius-md);
+      margin: 0 auto var(--space-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      transition: transform var(--transition-spring);
+    }
+
+    .visit-card:hover .visit-card-icon {
+      transform: scale(1.1) rotate(-5deg);
+    }
+
+    .visit-card:nth-child(1) .visit-card-icon { background: hsla(25, 90%, 52%, 0.2); }
+    .visit-card:nth-child(2) .visit-card-icon { background: hsla(200, 80%, 50%, 0.2); }
+    .visit-card:nth-child(3) .visit-card-icon { background: hsla(145, 65%, 42%, 0.2); }
+
+    .visit-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .visit-card p {
+      font-size: 0.88rem;
+      color: hsla(0, 0%, 100%, 0.65);
+      line-height: 1.7;
+    }
+
+    .visit-card .visit-detail {
+      display: inline-block;
+      margin-top: 0.75rem;
+      padding: 0.35rem 1.2rem;
+      background: hsla(0, 0%, 100%, 0.12);
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--clr-highlight);
+      letter-spacing: 0.5px;
+    }
+
+    /* ===== Map Section ===== */
+    .map-enquiry {
+      padding: 0;
+    }
+
+    .map-enquiry .map-container {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+
+    .map-enquiry .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      .contact-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .visit-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .enquiry-form-section .container {
+        grid-template-columns: 1fr;
+      }
+
+      .visit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .enquiry-type-selector {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row-enhanced {
+        grid-template-columns: 1fr;
+      }
+
+      .enquiry-form-card {
+        padding: var(--space-md);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .enquiry-hero {
+        padding: 8rem 0 3rem;
+      }
+
+      .enquiry-hero-title {
+        font-size: 1.8rem;
+      }
+
+      .hero-quick-contacts {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="Logo" class="nav-logo-img" />
+        <span class="nav-logo-text">Alphabet'z School</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="whyus.html">Why Us</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="#enquiry-form" class="active">Contact</a></li>
+        <li><a href="admission.html" class="nav-cta">Admissions Open</a></li>
+      </ul>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ===== ENQUIRY HERO ===== -->
+  <section class="enquiry-hero bg-yellow" style="position:relative; overflow:hidden; padding-bottom: 80px;" id="enquiry-hero">
+  <div class="floating-shape shape-circle" style="top: 15%; left: 5%;"></div>
+  <div class="floating-shape shape-triangle" style="top: 60%; right: 5%;"></div>
+    <div class="container">
+      <a href="index.html" class="back-link" id="backToHome">← Back to Home</a>
+
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        We're Here to Help
+      </div>
+
+      <h1 class="enquiry-hero-title" style="color: black;">
+        Let's Start a <span class="highlight" style="color: black;">Conversation</span>
+      </h1>
+
+      <p class="enquiry-hero-desc">
+        Whether you have questions about admissions, want to schedule a campus visit, or simply want to know more about Alphabet'z School — we're just a message away.
+      </p>
+
+      <div class="hero-quick-contacts">
+        <a href="tel:02312621010" class="quick-contact-pill" id="pillPhone">
+          <span class="pill-icon">📞</span>
+          0231-2621010
+        </a>
+        <a href="mailto:school.alphakop@gmail.com" class="quick-contact-pill" id="pillEmail">
+          <span class="pill-icon">✉️</span>
+          school.alphakop@gmail.com
+        </a>
+        <a href="https://wa.me/919112124440" class="quick-contact-pill" id="pillWhatsApp" target="_blank" rel="noopener">
+          <span class="pill-icon">💬</span>
+          WhatsApp Us
+        </a>
+      </div>
+      <div style="margin-top: 4rem; text-align: center;"><img src="images/enquiry-contact.png" alt="Contact us" style="border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); max-width: 100%; height: auto; max-height: 500px; object-fit: cover; width: 100%; border: 4px solid white;" /></div>
+    </div>
+    <div class="scallop-divider scallop-white"></div>
+  </section>
+
+  <!-- ===== CONTACT INFO CARDS ===== -->
+  <section class="contact-cards" id="contact-info">
+    <div class="container">
+      <div class="contact-cards-header reveal">
+        <span class="section-label">Reach Us</span>
+        <h2 class="section-title">Multiple Ways to Connect</h2>
+        <p class="section-desc">
+          Choose the way that works best for you. Our dedicated team is ready to assist you with any questions.
+        </p>
+      </div>
+
+      <div class="contact-cards-grid">
+        <div class="info-card reveal" style="transition-delay: 0.1s;" id="cardAddress">
+          <div class="info-card-icon">📍</div>
+          <h3>Visit Us</h3>
+          <p>Alphabet'z School, 1794, A, Bhumneswar Bagh,<br />Chhatrapati Shivaji Peth, Kolhapur.</p>
+          <a href="https://maps.app.goo.gl/6v3YLGGdusY3NSTS7" target="_blank" class="info-link">View on Map →</a>
+        </div>
+
+        <div class="info-card reveal" style="transition-delay: 0.2s;" id="cardPhone">
+          <div class="info-card-icon">📞</div>
+          <h3>Call Us</h3>
+          <p>0231-2621010<br />+91 91121 24440 (WhatsApp)</p>
+          <a href="tel:02312621010" class="info-link">Call Now →</a>
+        </div>
+
+        <div class="info-card reveal" style="transition-delay: 0.3s;" id="cardEmail">
+          <div class="info-card-icon">✉️</div>
+          <h3>Email Us</h3>
+          <p>school.alphakop@gmail.com</p>
+          <a href="mailto:school.alphakop@gmail.com" class="info-link">Send Email →</a>
+        </div>
+
+        <div class="info-card reveal" style="transition-delay: 0.4s;" id="cardHours">
+          <div class="info-card-icon">🕐</div>
+          <h3>Office Hours</h3>
+          <p>School: Mon–Sat, 9 AM – 2:30 PM<br />Office: Mon–Sat, 9 AM – 4 PM</p>
+          <a href="#visit-us" class="info-link">Plan a Visit →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ENQUIRY FORM SECTION ===== -->
+  <section class="enquiry-form-section" id="enquiry-form">
+    <div class="container">
+      <!-- Left: Why Enquire -->
+      <div class="form-info reveal-left">
+        <span class="section-label">Send an Enquiry</span>
+        <h2 class="section-title">We'd Love to Hear From You</h2>
+        <p class="section-desc">
+          Fill out the form and our team will get back to you within 24 hours. No obligations — just a friendly conversation about your child's future.
+        </p>
+
+        <div class="form-benefits">
+          <div class="form-benefit">
+            <div class="form-benefit-icon">⚡</div>
+            <div class="form-benefit-text">
+              <h4>Quick Response</h4>
+              <p>We respond to all enquiries within 24 hours</p>
+            </div>
+          </div>
+
+          <div class="form-benefit">
+            <div class="form-benefit-icon">🎯</div>
+            <div class="form-benefit-text">
+              <h4>Personalized Guidance</h4>
+              <p>Get advice tailored to your child's age and needs</p>
+            </div>
+          </div>
+
+          <div class="form-benefit">
+            <div class="form-benefit-icon">🏫</div>
+            <div class="form-benefit-text">
+              <h4>Free Campus Tour</h4>
+              <p>Schedule a visit to see our facilities firsthand</p>
+            </div>
+          </div>
+
+          <div class="form-benefit">
+            <div class="form-benefit-icon">📋</div>
+            <div class="form-benefit-text">
+              <h4>Fee & Curriculum Info</h4>
+              <p>Receive a detailed brochure on programs and pricing</p>
+            </div>
+          </div>
+
+          <div class="form-benefit">
+            <div class="form-benefit-icon">🔒</div>
+            <div class="form-benefit-text">
+              <h4>Your Privacy Matters</h4>
+              <p>We never share your information with third parties</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 2rem; text-align: center;">
+          <img src="images/enquiry-contact.png" alt="Admission Consultation" style="border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); max-width: 100%; height: auto; border: 3px solid white;" />
+        </div>
+      </div>
+
+      <!-- Right: The Form -->
+      <div class="enquiry-form-card reveal-right" id="formCard">
+        <div class="form-card-header">
+          <h3>📩 Enquiry Form</h3>
+          <p>All fields marked with <span style="color: hsl(0, 70%, 55%);">*</span> are required</p>
+        </div>
+
+        <!-- Enquiry Type -->
+        <div class="enquiry-type-selector" id="enquiryTypeSelector">
+          <div class="enquiry-type-option">
+            <input type="radio" name="enquiryType" id="typeAdmission" value="admission" checked />
+            <label for="typeAdmission" class="enquiry-type-label">
+              <span class="type-icon">🎒</span>
+              Admission Enquiry
+            </label>
+          </div>
+          <div class="enquiry-type-option">
+            <input type="radio" name="enquiryType" id="typeCampus" value="campus" />
+            <label for="typeCampus" class="enquiry-type-label">
+              <span class="type-icon">🏫</span>
+              Campus Visit
+            </label>
+          </div>
+          <div class="enquiry-type-option">
+            <input type="radio" name="enquiryType" id="typeGeneral" value="general" />
+            <label for="typeGeneral" class="enquiry-type-label">
+              <span class="type-icon">💬</span>
+              General Query
+            </label>
+          </div>
+        </div>
+
+        <form id="enquiryForm">
+          <div class="form-divider"><span>Parent Details</span></div>
+
+          <div class="form-row-enhanced">
+            <div class="form-group-enhanced">
+              <label>
+                <span class="label-icon">👤</span>
+                Parent's Full Name
+                <span class="required-star">*</span>
+              </label>
+              <input type="text" id="parentName" name="parentName" placeholder="e.g. Rajesh Kulkarni" required />
+            </div>
+            <div class="form-group-enhanced">
+              <label>
+                <span class="label-icon">👤</span>
+                Mother's / Guardian's Name
+              </label>
+              <input type="text" id="motherName" name="motherName" placeholder="e.g. Sneha Kulkarni" />
+            </div>
+          </div>
+
+          <div class="form-row-enhanced">
+            <div class="form-group-enhanced">
+              <label>
+                <span class="label-icon">📞</span>
+                Phone Number
+                <span class="required-star">*</span>
+              </label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+              <span class="input-hint">We'll send updates on WhatsApp too</span>
+            </div>
+            <div class="form-group-enhanced">
+              <label>
+                <span class="label-icon">✉️</span>
+                Email Address
+              </label>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" />
+            </div>
+          </div>
+
+          <div class="form-divider"><span>Child Details</span></div>
+
+          <div class="form-row-enhanced">
+            <div class="form-group-enhanced">
+              <label>
+                <span class="label-icon">👧</span>
+                Child's Name
+                <span class="required-star">*</span>
+              </label>
+              <input type="text" id="childName" name="childName" placeholder="e.g. Ananya Kulkarni" required />
+            </div>
+            <div class="form-group-enhanced">
+              <label>
+                <span class="label-icon">🎂</span>
+                Date of Birth
+                <span class="required-star">*</span>
+              </label>
+              <input type="date" id="childDob" name="childDob" required />
+            </div>
+          </div>
+
+          <div class="form-row-enhanced">
+            <div class="form-group-enhanced">
+              <label>
+                <span class="label-icon">📚</span>
+                Class Applying For
+                <span class="required-star">*</span>
+              </label>
+              <select id="classSelect" name="classSelect" required>
+                <option value="" disabled selected>Select Class</option>
+                <option value="play-group">Play Group (Age 2.5 – 4)</option>
+                <option value="nursery">Nursery (3yrs+)</option>
+                <option value="jr-kg">Jr KG (4yrs+)</option>
+                <option value="sr-kg">Sr KG (5yrs+)</option>
+                <option value="1st">1st Standard (Age 5 – 6)</option>
+                <option value="2nd">2nd Standard (Age 6 – 7)</option>
+                <option value="3rd">3rd Standard (Age 7 – 8)</option>
+                <option value="4th">4th Standard (Age 8 – 9)</option>
+              </select>
+            </div>
+            <div class="form-group-enhanced">
+              <label>
+                <span class="label-icon">🧒</span>
+                Gender
+              </label>
+              <select id="gender" name="gender">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group-enhanced">
+            <label>
+              <span class="label-icon">🏠</span>
+              Residential Address
+            </label>
+            <input type="text" id="address" name="address" placeholder="Your area / locality in Kolhapur" />
+            <span class="input-hint">Helps us check transport route availability</span>
+          </div>
+
+          <div class="form-divider"><span>Additional Information</span></div>
+
+          <div class="form-row-enhanced">
+            <div class="form-group-enhanced">
+              <label>
+                <span class="label-icon">🏫</span>
+                Previous School (if any)
+              </label>
+              <input type="text" id="prevSchool" name="prevSchool" placeholder="Name of previous school" />
+            </div>
+            <div class="form-group-enhanced">
+              <label>
+                <span class="label-icon">🚌</span>
+                Need Transport?
+              </label>
+              <select id="transport" name="transport">
+                <option value="" disabled selected>Select</option>
+                <option value="yes">Yes, I need school bus</option>
+                <option value="no">No, I'll manage my own</option>
+                <option value="undecided">Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group-enhanced">
+            <label>
+              <span class="label-icon">💬</span>
+              Your Message / Questions
+            </label>
+            <textarea id="message" name="message" placeholder="Tell us about your child's interests, any special requirements, or specific questions you have..."></textarea>
+          </div>
+
+          <div class="form-group-enhanced">
+            <label>
+              <span class="label-icon">📅</span>
+              How did you hear about us?
+            </label>
+            <select id="referralSource" name="referralSource">
+              <option value="" disabled selected>Select</option>
+              <option value="friend">Friend / Family Referral</option>
+              <option value="social-media">Social Media</option>
+              <option value="google">Google Search</option>
+              <option value="newspaper">Newspaper / Pamphlet</option>
+              <option value="drive-by">Saw the School</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="consent-group">
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent">
+              I agree to receive communications from Alphabet'z School regarding admissions and events. I understand that my information will be kept confidential and not shared with third parties.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit-enhanced" id="submitBtn">
+            🚀 Submit Enquiry
+          </button>
+        </form>
+
+        <!-- Success Overlay -->
+        <div class="form-success-overlay" id="successOverlay">
+          <div class="success-icon">✅</div>
+          <h3>Enquiry Submitted!</h3>
+          <p>Thank you for your interest in Alphabet'z School. Our admissions team will contact you within 24 hours.</p>
+          <a href="index.html" class="btn btn-primary" id="successHomeBtn" style="margin-top: 0.5rem;">🏠 Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VISIT US SECTION ===== -->
+  <section class="visit-section" id="visit-us">
+    <div class="container">
+      <div class="visit-header reveal">
+        <span class="section-label">Plan Your Visit</span>
+        <h2 class="section-title">Come See Us in Person</h2>
+        <p class="section-desc">
+          Nothing beats experiencing Alphabet'z School firsthand. Schedule a visit and let us show you why families trust us with their children's education.
+        </p>
+      </div>
+
+      <div class="visit-grid">
+        <div class="visit-card reveal" style="transition-delay: 0.1s;" id="visitCard1">
+          <div class="visit-card-icon">🗓️</div>
+          <h3>Book a Campus Tour</h3>
+          <p>Walk through our classrooms, play areas, and facilities with our team. Tours are available every school day.</p>
+          <span class="visit-detail">Mon – Sat, 10 AM – 1 PM</span>
+        </div>
+
+        <div class="visit-card reveal" style="transition-delay: 0.2s;" id="visitCard2">
+          <div class="visit-card-icon">👩‍🏫</div>
+          <h3>Meet the Teachers</h3>
+          <p>Have a one-on-one conversation with our faculty to understand our teaching approach and curriculum.</p>
+          <span class="visit-detail">By Appointment</span>
+        </div>
+
+        <div class="visit-card reveal" style="transition-delay: 0.3s;" id="visitCard3">
+          <div class="visit-card-icon">👨‍👩‍👧</div>
+          <h3>Open House Events</h3>
+          <p>Attend our monthly open house with interactive demo classes, parent workshops, and Q&A sessions.</p>
+          <span class="visit-detail">Last Saturday of Every Month</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP ===== -->
+  <section class="map-enquiry" id="map">
+    <div class="map-container">
+      <iframe
+        src="https://maps.google.com/maps?q=Alphabet'z+Pre+Primary+School,+1794,+A,+Brahmeshwar+bag,+shivaji+peth,+kolhapur&t=&z=16&ie=UTF8&iwloc=&output=embed"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Alphabet'z School Location on Map"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-box reveal">
+        <div class="cta-content">
+          <h2>🎓 Ready to Explore Alphabet'z School?</h2>
+          <p>
+            Visit our admissions page for complete details on eligibility, fee structure, required documents, and important dates.
+          </p>
+          <a href="admission.html" class="btn btn-white" id="ctaAdmissionBtn">
+            📋 View Admission Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="images/logo.jpg" alt="Logo" class="nav-logo-img" />
+            <span class="nav-logo-text">Alphabet'z School</span>
+          </a>
+          <p>
+            Nurturing young minds since 2015. Alphabet'z School is committed to providing quality education in a joyful and safe learning environment in Kolhapur.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="YouTube">🎬</a>
+            <a href="https://wa.me/919112124440" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="whyus.html">Why Choose Us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="admission.html">Admission Process</a></li>
+            <li><a href="admission.html#documents">Documents Required</a></li>
+            <li><a href="admission.html#dates">Important Dates</a></li>
+            <li><a href="admission.html#faqs">FAQs</a></li>
+            <li><a href="#enquiry-form">Enquiry Form</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><a href="https://maps.app.goo.gl/6v3YLGGdusY3NSTS7" target="_blank">📍 1794, A, Brahmeshwar bag, shivaji peth, kolhapur.</a></li>
+            <li><a href="tel:02312621010">📞 0231-2621010</a></li>
+            <li><a href="mailto:school.alphakop@gmail.com">✉️ school.alphakop@gmail.com</a></li>
+            <li><a href="#">🕐 Mon-Sat: 8 AM – 2 PM</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Alphabet'z School, Kolhapur. All rights reserved.</p>
+        <p>Designed with ❤️ for young learners | Powered by <strong>weblinkers™</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // ---- Navbar scroll effect ----
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // ---- Mobile menu toggle ----
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navOverlay = document.getElementById('navOverlay');
+
+    function toggleMenu() {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      navOverlay.classList.toggle('active');
+      document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    }
+
+    menuToggle.addEventListener('click', toggleMenu);
+    navOverlay.addEventListener('click', toggleMenu);
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+          toggleMenu();
+        }
+      });
+    });
+
+    // ---- Scroll reveal ----
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+        rootMargin: '0px 0px -60px 0px',
+      }
+    );
+
+    revealElements.forEach((el) => revealObserver.observe(el));
+
+    // ---- Scroll to top ----
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ---- Form submission handler ----
+    const enquiryForm = document.getElementById('enquiryForm');
+    const successOverlay = document.getElementById('successOverlay');
+
+    enquiryForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const submitBtn = document.getElementById('submitBtn');
+      const originalText = submitBtn.innerHTML;
+
+      // Show loading state
+      submitBtn.innerHTML = '⏳ Submitting...';
+      submitBtn.disabled = true;
+
+      setTimeout(() => {
+        const type = document.querySelector('input[name="enquiryType"]:checked')?.value || 'N/A';
+        const parentName = document.getElementById('parentName').value;
+        const motherName = document.getElementById('motherName').value;
+        const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
+        const childName = document.getElementById('childName').value;
+        const childDob = document.getElementById('childDob').value;
+        const classSelect = document.getElementById('classSelect').value;
+        const gender = document.getElementById('gender').value;
+        const address = document.getElementById('address').value;
+        const prevSchool = document.getElementById('prevSchool').value;
+        const transport = document.getElementById('transport').value;
+        const message = document.getElementById('message').value;
+        const referral = document.getElementById('referralSource').value;
+
+        const waMsg = `*New Enquiry*\nType: ${type}\n*Parent Details*\nFather: ${parentName}\nMother: ${motherName}\nPhone: ${phone}\nEmail: ${email}\n\n*Child Details*\nName: ${childName}\nDOB: ${childDob}\nClass: ${classSelect}\nGender: ${gender}\nAddress: ${address}\nPrevious School: ${prevSchool}\nTransport Needed: ${transport}\n\n*Additional Info*\nMessage: ${message}\nHeard About Us: ${referral}`;
+        const waUrl = `https://wa.me/919112124440?text=${encodeURIComponent(waMsg)}`;
+        window.open(waUrl, '_blank');
+
+        // Show success overlay
+        successOverlay.classList.add('visible');
+
+        // Reset form
+        enquiryForm.reset();
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+
+        // Hide overlay after 8 seconds
+        setTimeout(() => {
+          successOverlay.classList.remove('visible');
+        }, 8000);
+      }, 500);
+    });
+
+    // ---- Smooth scroll ----
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          const navHeight = navbar.offsetHeight;
+          const targetPos = target.getBoundingClientRect().top + window.scrollY - navHeight - 20;
+          window.scrollTo({ top: targetPos, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+
+  <!-- ===== FLOATING CHATBOT ===== -->
+  
+  <div class="chatbot-wrapper">
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open Chat">💬</button>
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <img src="images/logo.jpg" alt="Bot" class="chatbot-avatar-img" />
+          <div>
+            <h3>Alphabet'z Assistant</h3>
+            <p>Online</p>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbotClose" aria-label="Close Chat">&times;</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chat-msg bot">Hi there! 👋 Welcome to Alphabet'z School. How can I help you today?</div>
+      </div>
+      <div class="chatbot-options">
+        <button class="chatbot-option-btn" data-query="admission">Admissions</button>
+        <button class="chatbot-option-btn" data-query="timing">Timings</button>
+        <button class="chatbot-option-btn" data-query="location">Location</button>
+        <button class="chatbot-option-btn" data-query="program">Programs</button>
+        <button class="chatbot-option-btn" data-query="contact">Contact Info</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Chatbot Logic
+    const chatToggle = document.getElementById('chatbotToggle');
+    const chatWindow = document.getElementById('chatbotWindow');
+    const chatClose = document.getElementById('chatbotClose');
+    const chatMessages = document.getElementById('chatbotMessages');
+    const optionBtns = document.querySelectorAll('.chatbot-option-btn');
+
+    function toggleChat() {
+      chatWindow.classList.toggle('active');
+    }
+
+    chatToggle.addEventListener('click', toggleChat);
+    chatClose.addEventListener('click', toggleChat);
+
+    function addMessage(msg, type) {
+      const msgDiv = document.createElement('div');
+      msgDiv.className = `chat-msg ${type}`;
+      msgDiv.textContent = msg;
+      chatMessages.appendChild(msgDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function showTyping() {
+      const typingDiv = document.createElement('div');
+      typingDiv.className = 'chat-msg bot chat-typing';
+      typingDiv.id = 'chatTyping';
+      typingDiv.innerHTML = '<span></span><span></span><span></span>';
+      chatMessages.appendChild(typingDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function removeTyping() {
+      const typingDiv = document.getElementById('chatTyping');
+      if(typingDiv) typingDiv.remove();
+    }
+    
+    function getBotResponse(input) {
+        const text = input.toLowerCase();
+        if (text.includes("fee") || text.includes("cost")) {
+          return "Please contact the school office for detailed information regarding our fee structure.";
+        } else if (text.includes("admission") || text.includes("enroll") || text.includes("apply")) {
+          return "Admissions for 2026-27 are currently open! You can fill out the enquiry form on our Contact page or visit our campus.";
+        } else if (text.includes("time") || text.includes("timing") || text.includes("hour")) {
+          return "Our school timings are Monday to Saturday, 9:00 AM to 2:30 PM.";
+        } else if (text.includes("location") || text.includes("address") || text.includes("where")) {
+          return "We are located at 1794, A, Brahmeshwar bag, shivaji peth, kolhapur. You can find a map on our Contact page.";
+        } else if (text.includes("program") || text.includes("class") || text.includes("standard")) {
+          return "We offer classes from Play Group up to 4th Standard. You can learn more on our Programs page.";
+        } else if (text.includes("contact") || text.includes("phone") || text.includes("call") || text.includes("email")) {
+          return "You can reach us at 0231-2621010 or email school.alphakop@gmail.com.";
+        } else {
+          return "Thanks for your message. For detailed information, please check our website or contact our administration office at 0231-2621010.";
+        }
+    }
+
+    optionBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const query = btn.getAttribute('data-query');
+        const label = btn.textContent;
+        
+        // Add user message
+        addMessage(label, 'user');
+        
+        // Simulate typing and respond
+        showTyping();
+        setTimeout(() => {
+          removeTyping();
+          addMessage(getBotResponse(query), 'bot');
+        }, 1200);
+      });
+    });
+  </script>
+</body>
+
+</html>
+
+

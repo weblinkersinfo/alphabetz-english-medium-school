@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials – Alphabet'z School Kolhapur | What Parents Say</title>
+  <meta name="description" content="Read what parents say about Alphabet'z School Kolhapur. Real stories, heartfelt reviews, and testimonials from families who trust us with their children's education." />
+  <meta name="keywords" content="Alphabet'z School reviews, parent testimonials, school feedback Kolhapur, best school reviews, parent satisfaction" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
+  <style>
+    .page-hero{position:relative;padding:10rem 0 5rem;background:linear-gradient(135deg,hsl(35,40%,95%) 0%,hsl(35,30%,97%) 100%);overflow:hidden;text-align:center}
+    .page-hero::before{content:'';position:absolute;top:-40%;right:-15%;width:700px;height:700px;background:radial-gradient(circle,hsla(25,90%,52%,.08) 0%,transparent 70%);border-radius:50%;animation:float-slow 20s ease-in-out infinite}
+    .page-hero::after{content:'';position:absolute;bottom:-30%;left:-10%;width:500px;height:500px;background:radial-gradient(circle,hsla(200,80%,50%,.06) 0%,transparent 70%);border-radius:50%;animation:float-slow 15s ease-in-out infinite reverse}
+    .page-hero .container{position:relative;z-index:1}
+    .page-hero-title{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;line-height:1.15;margin-bottom:var(--space-md);animation:slideUp .8s .2s cubic-bezier(.34,1.56,.64,1) both}
+    .page-hero-desc{font-size:1.15rem;color:var(--clr-text-muted);max-width:640px;margin:0 auto var(--space-lg);line-height:1.8;animation:slideUp .8s .4s cubic-bezier(.34,1.56,.64,1) both}
+    .back-link{display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;font-weight:600;color:var(--clr-primary);margin-bottom:var(--space-md);transition:all var(--transition-fast);animation:slideDown .8s cubic-bezier(.34,1.56,.64,1) both}
+    .back-link:hover{gap:.75rem;color:var(--clr-primary-dark)}
+
+    /* Rating summary */
+    .rating-banner{padding:var(--space-xl) 0;background:var(--grad-hero);color:white;text-align:center;position:relative;overflow:hidden}
+    .rating-banner::before{content:'';position:absolute;top:-50%;right:-20%;width:500px;height:500px;background:radial-gradient(circle,hsla(0,0%,100%,.1),transparent 60%);border-radius:50%}
+    .rating-banner .container{position:relative;z-index:1}
+    .rating-big{font-family:var(--font-heading);font-size:4rem;font-weight:800;margin-bottom:.2rem}
+    .rating-stars{font-size:1.8rem;letter-spacing:4px;margin-bottom:.5rem;color:var(--clr-highlight)}
+    .rating-sub{font-size:1rem;opacity:.85}
+
+    /* Testimonials Grid */
+    .testi-section{padding:var(--space-2xl) 0}
+    .testi-header{text-align:center;margin-bottom:var(--space-xl)}.testi-header .section-desc{margin:0 auto}
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-md)}
+    .testi-card{background:var(--clr-surface);border-radius:var(--radius-lg);padding:var(--space-lg);box-shadow:var(--shadow-sm);border:1px solid var(--clr-border);transition:all var(--transition-spring);position:relative;overflow:hidden}
+    .testi-card::before{content:'"';position:absolute;top:10px;right:20px;font-size:5rem;font-family:var(--font-heading);color:hsla(25,90%,52%,.08);line-height:1}
+    .testi-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--clr-primary)}
+    .testi-stars{color:var(--clr-highlight);font-size:1rem;margin-bottom:var(--space-sm);letter-spacing:2px}
+    .testi-text{font-size:.92rem;line-height:1.7;color:var(--clr-text-muted);margin-bottom:var(--space-md);font-style:italic;position:relative;z-index:1}
+    .testi-author{display:flex;align-items:center;gap:.75rem}
+    .testi-avatar{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:700;color:white}
+    .testi-card:nth-child(6n+1) .testi-avatar{background:var(--grad-warm)}.testi-card:nth-child(6n+2) .testi-avatar{background:var(--grad-sky)}.testi-card:nth-child(6n+3) .testi-avatar{background:var(--grad-green)}.testi-card:nth-child(6n+4) .testi-avatar{background:linear-gradient(135deg,hsl(280,65%,55%),hsl(300,60%,60%))}.testi-card:nth-child(6n+5) .testi-avatar{background:linear-gradient(135deg,hsl(45,100%,55%),hsl(35,95%,50%))}.testi-card:nth-child(6n) .testi-avatar{background:var(--grad-hero)}
+    .testi-name{font-weight:600;font-size:.95rem}
+
+    /* Highlighted Story */
+    .story-section{padding:var(--space-2xl) 0;background:linear-gradient(135deg,hsl(220,25%,14%) 0%,hsl(220,20%,20%) 100%);color:white;position:relative;overflow:hidden}
+    .story-section::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,hsla(25,90%,52%,.1),transparent 60%);border-radius:50%}
+    .story-header{text-align:center;margin-bottom:var(--space-xl)}.story-header .section-label{color:var(--clr-highlight)}.story-header .section-label::before{background:var(--clr-highlight)}.story-header .section-title{color:white}.story-header .section-desc{color:hsla(0,0%,100%,.65);margin:0 auto}
+    .story-card{max-width:800px;margin:0 auto;background:hsla(0,0%,100%,.06);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid hsla(0,0%,100%,.1);border-radius:var(--radius-xl);padding:var(--space-xl);text-align:center;position:relative;z-index:1}
+    .story-card .story-quote{font-size:1.15rem;line-height:1.8;color:hsla(0,0%,100%,.85);font-style:italic;margin-bottom:var(--space-lg)}
+    .story-card .story-author{display:flex;align-items:center;justify-content:center;gap:var(--space-sm)}
+    .story-card .story-av{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:800;color:white;background:var(--grad-hero)}
+    .story-card .sa-name{font-weight:700;font-size:1.1rem}.story-card .sa-role{font-size:.85rem;color:hsla(0,0%,100%,.55)}
+    .story-card .big-stars{font-size:1.5rem;letter-spacing:4px;color:var(--clr-highlight);margin-bottom:var(--space-md)}
+
+    /* Student Achievements */
+    .student-ach{padding:var(--space-2xl) 0;background:linear-gradient(180deg,hsl(35,35%,94%) 0%,var(--clr-bg) 100%)}
+    .student-ach-header{text-align:center;margin-bottom:var(--space-xl)}.student-ach-header .section-desc{margin:0 auto}
+    .student-ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-md)}
+    .sa-card{background:var(--clr-surface);border-radius:var(--radius-lg);padding:var(--space-lg);text-align:center;box-shadow:var(--shadow-sm);border:1px solid var(--clr-border);transition:all var(--transition-spring)}
+    .sa-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+    .sa-card::before{content:'';position:absolute}
+    .sa-emoji{font-size:2.5rem;margin-bottom:var(--space-sm)}
+    .sa-card h3{font-size:1.05rem;margin-bottom:.3rem}.sa-card p{font-size:.85rem;color:var(--clr-text-muted);line-height:1.6}
+    .sa-card .sa-name-tag{display:inline-block;margin-top:.5rem;padding:.25rem .8rem;background:hsla(25,90%,52%,.08);color:var(--clr-primary);border-radius:var(--radius-full);font-size:.78rem;font-weight:600}
+
+    /* Feedback Form */
+    .feedback-section{padding:var(--space-2xl) 0;background:linear-gradient(135deg,hsl(35,40%,95%) 0%,hsl(35,30%,97%) 100%)}
+    .feedback-header{text-align:center;margin-bottom:var(--space-xl)}.feedback-header .section-desc{margin:0 auto}
+    .feedback-form-card{max-width:700px;margin:0 auto;background:var(--clr-surface);border-radius:var(--radius-xl);padding:var(--space-xl);box-shadow:var(--shadow-lg);border:1px solid var(--clr-border)}
+    .form-group{margin-bottom:var(--space-md)}
+    .form-group label{display:block;font-size:.95rem;font-weight:600;margin-bottom:.5rem;color:var(--clr-text)}
+    .form-group input, .form-group textarea, .form-group select{width:100%;padding:.85rem 1rem;border:2px solid var(--clr-border);border-radius:var(--radius-md);font-family:var(--font-body);font-size:1rem;transition:all var(--transition-fast);background:var(--clr-bg)}
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus{border-color:var(--clr-primary);box-shadow:0 0 0 4px hsla(25,90%,52%,.1);outline:none;background:var(--clr-surface)}
+    .form-group textarea{resize:vertical;min-height:120px}
+    .star-rating{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:.5rem}
+    .star-rating input{display:none}
+    .star-rating label{font-size:2rem;color:var(--clr-border);cursor:pointer;transition:color var(--transition-fast)}
+    .star-rating input:checked ~ label, .star-rating label:hover, .star-rating label:hover ~ label{color:var(--clr-highlight)}
+    .feedback-submit{width:100%;padding:1rem;font-size:1.1rem;margin-top:var(--space-sm)}
+
+    @media(max-width:1024px){.testi-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:768px){.testi-grid{grid-template-columns:1fr}.student-ach-grid{grid-template-columns:1fr}}
+    @media(max-width:480px){.page-hero{padding:8rem 0 3rem}.page-hero-title{font-size:1.8rem}.rating-big{font-size:3rem}}
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar"><div class="container"><a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="Logo" class="nav-logo-img" /><span class="nav-logo-text">Alphabet'z School</span></a><ul class="nav-links" id="navLinks"><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="whyus.html">Why Us</a></li><li><a href="testimonials.html" class="active">Testimonials</a></li><li><a href="enquiry.html">Contact</a></li><li><a href="admission.html" class="nav-cta">Admissions Open</a></li></ul><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button></div><div class="nav-overlay" id="navOverlay"></div></nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+      <div class="hero-badge"><span class="badge-dot"></span>Real Stories, Real Families</div>
+      <h1 class="page-hero-title">Hear What <span class="highlight">Parents</span> Say</h1>
+      <p class="page-hero-desc">Don't just take our word for it. Read genuine testimonials from the families who have entrusted Alphabet'z School with their children's formative years.</p>
+      <div style="margin-top: 4rem; text-align: center;"><img src="images/parents-meeting.png" alt="Parent-teacher interaction event at Alphabet'z School" style="border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); max-width: 100%; height: auto; max-height: 500px; object-fit: cover; width: 100%; border: 4px solid white;" /></div>
+    </div>
+  </section>
+
+  <!-- RATING BANNER -->
+  <section class="rating-banner">
+    <div class="container">
+      <div class="rating-big reveal">4.9/5</div>
+      <div class="rating-stars reveal">★★★★★</div>
+      <div class="rating-sub reveal">Based on 200+ parent reviews</div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS GRID -->
+  <section class="testi-section">
+    <div class="container">
+      <div class="testi-header reveal">
+        <span class="section-label">Parent Testimonials</span>
+        <h2 class="section-title">Stories That Warm Our Hearts</h2>
+        <p class="section-desc">Every testimonial is a reminder of why we do what we do — nurturing happy, confident learners.</p>
+      </div>
+
+      <div class="testi-grid">
+        <div class="testi-card reveal" style="transition-delay:.1s">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"My daughter's transformation since joining Alphabet'z School has been incredible. She loves going to school every morning! The teachers are caring and the learning approach is truly innovative."</p>
+          <div class="testi-author"><div class="testi-avatar">SP</div><div><div class="testi-name">Sneha Patil</div></div></div>
+        </div>
+
+        <div class="testi-card reveal" style="transition-delay:.15s">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Alphabet'z School provides the perfect balance of academics and extracurricular activities. My son has developed excellent communication skills and confidence. Highly recommended!"</p>
+          <div class="testi-author"><div class="testi-avatar">RK</div><div><div class="testi-name">Rajesh Kulkarni</div></div></div>
+        </div>
+
+        <div class="testi-card reveal" style="transition-delay:.2s">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The safe and nurturing environment at Alphabet'z School gives us peace of mind. The regular parent-teacher meetings keep us informed about our child's growth and progress."</p>
+          <div class="testi-author"><div class="testi-avatar">AJ</div><div><div class="testi-name">Anita Jadhav</div></div></div>
+        </div>
+
+        <div class="testi-card reveal" style="transition-delay:.25s">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"We moved to Kolhapur last year and were worried about finding the right school. Alphabet'z School exceeded all our expectations — the warmth of the staff, the quality of teaching, and the beautiful campus. Our daughter settled in within a week!"</p>
+          <div class="testi-author"><div class="testi-avatar">VD</div><div><div class="testi-name">Vivek Deshmukh</div></div></div>
+        </div>
+
+        <div class="testi-card reveal" style="transition-delay:.3s">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"What I love most is how the teachers identify each child's strengths. My son used to be very shy, but the drama club and public speaking activities at Alphabet'z have transformed him into a confident speaker."</p>
+          <div class="testi-author"><div class="testi-avatar">PM</div><div><div class="testi-name">Priya Mane</div></div></div>
+        </div>
+
+        <div class="testi-card reveal" style="transition-delay:.35s">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The school bus service is excellent — GPS tracked, always on time, and the attendant knows every child by name. As a working parent, this gives me tremendous peace of mind every morning."</p>
+          <div class="testi-author"><div class="testi-avatar">AS</div><div><div class="testi-name">Amol Shinde</div></div></div>
+        </div>
+
+        <div class="testi-card reveal" style="transition-delay:.4s">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Both my children study at Alphabet'z — one in Play Group and one in 3rd Std. The consistency of quality across all levels is remarkable. Every teacher truly cares about each child's well-being."</p>
+          <div class="testi-author"><div class="testi-avatar">NK</div><div><div class="testi-name">Neha Kale</div></div></div>
+        </div>
+
+        <div class="testi-card reveal" style="transition-delay:.45s">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The activity-based learning approach makes such a difference. My daughter actually understands science concepts through experiments rather than just memorizing from books. Real education!"</p>
+          <div class="testi-author"><div class="testi-avatar">SG</div><div><div class="testi-name">Suresh Gaikwad</div></div></div>
+        </div>
+
+        <div class="testi-card reveal" style="transition-delay:.5s">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The annual day performances, sports events, and cultural programs are top-notch. Alphabet'z School doesn't just educate — it builds character, confidence, and creativity in every child."</p>
+          <div class="testi-author"><div class="testi-avatar">MJ</div><div><div class="testi-name">Manasi Joshi</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED STORY -->
+  <section class="story-section">
+    <div class="container">
+      <div class="story-header reveal">
+        <span class="section-label">Featured Story</span>
+        <h2 class="section-title">A Parent's Journey with Alphabet'z</h2>
+        <p class="section-desc">An in-depth look at how Alphabet'z School has impacted one family's life.</p>
+      </div>
+      <div class="story-card reveal">
+        <div class="big-stars">★★★★★</div>
+        <p class="story-quote">"When we first visited Alphabet'z School in 2019, our son Arjun was a timid 3-year-old who would cry at the sight of strangers. Today, he's a confident 4th grader who leads the school assembly, participates in inter-school debates, and has won 3 medals in district-level science exhibitions. The transformation has been nothing short of magical. Mrs. Atigre and her team didn't just teach him subjects — they taught him to believe in himself. Alphabet'z School isn't just a school; it's our second family."</p>
+        <div class="story-author">
+          <div class="story-av">SK</div>
+          <div style="text-align:left">
+            <div class="sa-name">Dr. Sandeep & Kavita Khedekar</div>
+            <div class="sa-role">Parents of Arjun, 4th Std | Since 2019</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDENT ACHIEVEMENTS -->
+  <section class="student-ach">
+    <div class="container">
+      <div class="student-ach-header reveal">
+        <span class="section-label">Student Spotlight</span>
+        <h2 class="section-title">Our Stars Shine Bright</h2>
+        <p class="section-desc">Meet some of our outstanding students who have made us proud with their achievements.</p>
+      </div>
+      <div class="student-ach-grid">
+        <div class="sa-card reveal" style="transition-delay:.1s"><div class="sa-emoji">🥇</div><h3>District Science Champion</h3><p>Won 1st place in the Kolhapur District Science Exhibition with an innovative water purification model.</p><span class="sa-name-tag">Arjun K. – 4th Std</span></div>
+        <div class="sa-card reveal" style="transition-delay:.2s"><div class="sa-emoji">🎨</div><h3>State-Level Art Winner</h3><p>Awarded Gold medal in Maharashtra State Children's Art Competition for creative painting.</p><span class="sa-name-tag">Diya P. – 3rd Std</span></div>
+        <div class="sa-card reveal" style="transition-delay:.3s"><div class="sa-emoji">🏃</div><h3>Athletic Star</h3><p>Set a new record in the 100m dash at the inter-school sports meet, winning 3 gold medals.</p><span class="sa-name-tag">Rohan S. – 4th Std</span></div>
+        <div class="sa-card reveal" style="transition-delay:.4s"><div class="sa-emoji">📖</div><h3>Young Author</h3><p>Published a short story collection at age 8, inspiring other young writers across the school.</p><span class="sa-name-tag">Ananya M. – 3rd Std</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEEDBACK FORM -->
+  <section class="feedback-section" id="feedback">
+    <div class="container">
+      <div class="feedback-header reveal">
+        <span class="section-label">Your Voice Matters</span>
+        <h2 class="section-title">Share Your Experience</h2>
+        <p class="section-desc">Are you a parent of a student at Alphabet'z School? We would love to hear your feedback and opinion.</p>
+      </div>
+      
+      <div class="feedback-form-card reveal">
+        <form id="feedbackForm">
+          <div class="form-group">
+            <label for="fb-name">Your Name</label>
+            <input type="text" id="fb-name" placeholder="E.g., Rahul Deshmukh" required />
+          </div>
+          
+          <div class="form-group">
+            <label for="fb-child-class">Child's Class</label>
+            <select id="fb-child-class" required>
+              <option value="" disabled selected>Select class</option>
+              <option value="play-group">Play Group</option>
+              <option value="Nursery">Nursery</option>
+              <option value="Jr KG">Jr KG</option>
+              <option value="Sr KG">Sr KG</option>
+              <option value="1st Std">1st Standard</option>
+              <option value="2nd Std">2nd Standard</option>
+              <option value="3rd Std">3rd Standard</option>
+              <option value="4th Std">4th Standard</option>
+              <option value="Alumni">Alumni</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label>Rate Your Experience</label>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="5" /><label for="star5">★</label>
+              <input type="radio" id="star4" name="rating" value="4" /><label for="star4">★</label>
+              <input type="radio" id="star3" name="rating" value="3" /><label for="star3">★</label>
+              <input type="radio" id="star2" name="rating" value="2" /><label for="star2">★</label>
+              <input type="radio" id="star1" name="rating" value="1" /><label for="star1">★</label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="fb-message">Your Feedback / Opinion</label>
+            <textarea id="fb-message" placeholder="Tell us what you love about Alphabet'z School or how we can improve..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary feedback-submit" id="fbSubmitBtn">Send Feedback</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta"><div class="container"><div class="cta-box reveal"><div class="cta-content"><h2>🎓 Join the Alphabet'z School Family</h2><p>Hundreds of happy families can't be wrong. Give your child the gift of an extraordinary education — start with an enquiry today.</p><a href="enquiry.html" class="btn btn-white">✨ Send an Enquiry</a></div></div></div></section>
+
+  <!-- FOOTER -->
+  <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="Logo" class="nav-logo-img" /><span class="nav-logo-text">Alphabet'z School</span></a><p>Nurturing young minds since 2015. Alphabet'z School is committed to providing quality education in a joyful and safe learning environment in Kolhapur.</p><div class="footer-social"><a href="#" aria-label="Facebook">📘</a><a href="#" aria-label="Instagram">📸</a><a href="#" aria-label="YouTube">🎬</a><a href="https://wa.me/919112124440" aria-label="WhatsApp">💬</a></div></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="whyus.html">Why Choose Us</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="enquiry.html">Enquiry</a></li></ul></div><div class="footer-col"><h4>Programs</h4><ul><li><a href="programs.html#play-group">Play Group</a></li><li><a href="programs.html#nursery">Nursery</a></li><li><a href="programs.html#jr-kg">Jr KG</a></li><li><a href="programs.html#sr-kg">Sr KG</a></li><li><a href="programs.html#1st-std">1st Standard</a></li><li><a href="programs.html#2nd-std">2nd Standard</a></li><li><a href="programs.html#3rd-std">3rd Standard</a></li><li><a href="programs.html#4th-std">4th Standard</a></li></ul></div><div class="footer-col"><h4>Contact Info</h4><ul><li><a href="https://maps.app.goo.gl/6v3YLGGdusY3NSTS7" target="_blank">📍 1794, A, Brahmeshwar bag, shivaji peth, kolhapur.</a></li><li><a href="tel:02312621010">📞 0231-2621010</a></li><li><a href="mailto:school.alphakop@gmail.com">✉️ school.alphakop@gmail.com</a></li><li><a href="enquiry.html">🕐 Mon-Sat: 9 AM – 2:30 PM</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Alphabet'z School, Kolhapur. All rights reserved.</p><p>Designed with ❤️ for young learners | Powered by <strong>weblinkers™</strong></p></div></div></footer>
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+  <script>
+    const navbar=document.getElementById('navbar');window.addEventListener('scroll',()=>{window.scrollY>60?navbar.classList.add('scrolled'):navbar.classList.remove('scrolled')});
+    const menuToggle=document.getElementById('menuToggle'),navLinks=document.getElementById('navLinks'),navOverlay=document.getElementById('navOverlay');function toggleMenu(){menuToggle.classList.toggle('active');navLinks.classList.toggle('active');navOverlay.classList.toggle('active');document.body.style.overflow=navLinks.classList.contains('active')?'hidden':''}menuToggle.addEventListener('click',toggleMenu);navOverlay.addEventListener('click',toggleMenu);document.querySelectorAll('.nav-links a').forEach(l=>l.addEventListener('click',()=>{navLinks.classList.contains('active')&&toggleMenu()}));
+    const revealEls=document.querySelectorAll('.reveal,.reveal-left,.reveal-right');const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revObs.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -60px 0px'});revealEls.forEach(el=>revObs.observe(el));
+    const scrollTopBtn=document.getElementById('scrollTopBtn');window.addEventListener('scroll',()=>{window.scrollY>500?scrollTopBtn.classList.add('visible'):scrollTopBtn.classList.remove('visible')});scrollTopBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){const h=this.getAttribute('href');if(h==='#')return;e.preventDefault();const t=document.querySelector(h);if(t){const p=t.getBoundingClientRect().top+window.scrollY-navbar.offsetHeight-20;window.scrollTo({top:p,behavior:'smooth'})}}));
+    
+    // Feedback form handler
+    const feedbackForm=document.getElementById('feedbackForm');
+    if(feedbackForm){
+      feedbackForm.addEventListener('submit',(e)=>{
+        e.preventDefault();
+        const btn=document.getElementById('fbSubmitBtn');
+        const origText=btn.innerHTML;
+        btn.innerHTML='⏳ Sending...';
+        btn.disabled=true;
+        setTimeout(()=>{
+          const name = document.getElementById('fb-name').value;
+          const childClass = document.getElementById('fb-child-class').value;
+          const message = document.getElementById('fb-message').value;
+          const rating = document.querySelector('input[name="rating"]:checked')?.value || 'Not rated';
+          
+          const waMsg = `*New Feedback*\nName: ${name}\nChild's Class: ${childClass}\nRating: ${rating} Stars\nFeedback: ${message}`;
+          const waUrl = `https://wa.me/919112124440?text=${encodeURIComponent(waMsg)}`;
+          window.open(waUrl, '_blank');
+
+          btn.innerHTML='✅ Sent to WhatsApp!';
+          btn.style.background='var(--grad-green)';
+          btn.style.borderColor='transparent';
+          feedbackForm.reset();
+          setTimeout(()=>{
+            btn.innerHTML=origText;
+            btn.style.background='';
+            btn.style.borderColor='';
+            btn.disabled=false;
+          },3000);
+        },500);
+      });
+    }
+  </script>
+
+  <!-- ===== FLOATING CHATBOT ===== -->
+  
+  <div class="chatbot-wrapper">
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open Chat">💬</button>
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <img src="images/logo.jpg" alt="Bot" class="chatbot-avatar-img" />
+          <div>
+            <h3>Alphabet'z Assistant</h3>
+            <p>Online</p>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbotClose" aria-label="Close Chat">&times;</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chat-msg bot">Hi there! 👋 Welcome to Alphabet'z School. How can I help you today?</div>
+      </div>
+      <div class="chatbot-options">
+        <button class="chatbot-option-btn" data-query="admission">Admissions</button>
+        <button class="chatbot-option-btn" data-query="timing">Timings</button>
+        <button class="chatbot-option-btn" data-query="location">Location</button>
+        <button class="chatbot-option-btn" data-query="program">Programs</button>
+        <button class="chatbot-option-btn" data-query="contact">Contact Info</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Chatbot Logic
+    const chatToggle = document.getElementById('chatbotToggle');
+    const chatWindow = document.getElementById('chatbotWindow');
+    const chatClose = document.getElementById('chatbotClose');
+    const chatMessages = document.getElementById('chatbotMessages');
+    const optionBtns = document.querySelectorAll('.chatbot-option-btn');
+
+    function toggleChat() {
+      chatWindow.classList.toggle('active');
+    }
+
+    chatToggle.addEventListener('click', toggleChat);
+    chatClose.addEventListener('click', toggleChat);
+
+    function addMessage(msg, type) {
+      const msgDiv = document.createElement('div');
+      msgDiv.className = `chat-msg ${type}`;
+      msgDiv.textContent = msg;
+      chatMessages.appendChild(msgDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function showTyping() {
+      const typingDiv = document.createElement('div');
+      typingDiv.className = 'chat-msg bot chat-typing';
+      typingDiv.id = 'chatTyping';
+      typingDiv.innerHTML = '<span></span><span></span><span></span>';
+      chatMessages.appendChild(typingDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function removeTyping() {
+      const typingDiv = document.getElementById('chatTyping');
+      if(typingDiv) typingDiv.remove();
+    }
+    
+    function getBotResponse(input) {
+        const text = input.toLowerCase();
+        if (text.includes("fee") || text.includes("cost")) {
+          return "Please contact the school office for detailed information regarding our fee structure.";
+        } else if (text.includes("admission") || text.includes("enroll") || text.includes("apply")) {
+          return "Admissions for 2026-27 are currently open! You can fill out the enquiry form on our Contact page or visit our campus.";
+        } else if (text.includes("time") || text.includes("timing") || text.includes("hour")) {
+          return "Our school timings are Monday to Saturday, 9:00 AM to 2:30 PM.";
+        } else if (text.includes("location") || text.includes("address") || text.includes("where")) {
+          return "We are located at 1794, A, Brahmeshwar bag, shivaji peth, kolhapur. You can find a map on our Contact page.";
+        } else if (text.includes("program") || text.includes("class") || text.includes("standard")) {
+          return "We offer classes from Play Group up to 4th Standard. You can learn more on our Programs page.";
+        } else if (text.includes("contact") || text.includes("phone") || text.includes("call") || text.includes("email")) {
+          return "You can reach us at 0231-2621010 or email school.alphakop@gmail.com.";
+        } else {
+          return "Thanks for your message. For detailed information, please check our website or contact our administration office at 0231-2621010.";
+        }
+    }
+
+    optionBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const query = btn.getAttribute('data-query');
+        const label = btn.textContent;
+        
+        // Add user message
+        addMessage(label, 'user');
+        
+        // Simulate typing and respond
+        showTyping();
+        setTimeout(() => {
+          removeTyping();
+          addMessage(getBotResponse(query), 'bot');
+        }, 1200);
+      });
+    });
+  </script>
+</body>
+
+</html>
